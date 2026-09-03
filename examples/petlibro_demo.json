@@ -1,0 +1,59 @@
+{
+  "scenario": "Petlibro hypothetical China entry; public portfolio demo",
+  "materials": [
+    {
+      "id": "M-DISCOVERY",
+      "url": "https://www.xiaohongshu.com/explore/aaaaaaaaaaaaaaaaaaaaaaaa",
+      "role": "secondary_roundup",
+      "published_at": "2026-08-30",
+      "collected_at": "2026-09-03T09:00:00+08:00",
+      "reading": {"text": "summary_only", "images_expected": 1, "images_read": 1}
+    },
+    {
+      "id": "M-CONTEXT",
+      "url": "https://www.xiaohongshu.com/search_result/bbbbbbbbbbbbbbbbbbbbbbbb",
+      "role": "observed_use_not_verified_origin",
+      "published_at": "2026-08-25",
+      "collected_at": "2026-09-03T09:30:00+08:00",
+      "reading": {"text": "summary_only", "images_expected": 1, "images_read": 1}
+    },
+    {
+      "id": "M-COUNTER",
+      "url": "https://www.xiaohongshu.com/search_result/cccccccccccccccccccccccc",
+      "role": "counter_context",
+      "published_at": "2026-09-01",
+      "collected_at": "2026-09-03T10:00:00+08:00",
+      "reading": {"text": "summary_only", "images_expected": 1, "images_read": 1}
+    }
+  ],
+  "topic": {
+    "id": "T-DAILY-LIFE",
+    "version": 2,
+    "meaning": "A lifestyle expression around reducing performance pressure; both supportive and critical interpretations exist.",
+    "discovery_material_ids": ["M-DISCOVERY"],
+    "observed_use_material_ids": ["M-CONTEXT", "M-COUNTER"],
+    "heat_status": "unverified"
+  },
+  "assessment": {
+    "topic_id": "T-DAILY-LIFE",
+    "topic_version": 2,
+    "decision": "rework",
+    "scores": {
+      "brand_fit": 2,
+      "audience_need": 2,
+      "brand_memory": 1,
+      "participation": 1,
+      "execution": 2
+    },
+    "counterargument": "A tracking or check-in mechanic may recreate the performance pressure the expression resists."
+  },
+  "brief": {
+    "topic_id": "T-DAILY-LIFE",
+    "topic_version": 2,
+    "status": "draft_unverified",
+    "material_ids": ["M-DISCOVERY", "M-CONTEXT", "M-COUNTER"],
+    "brand_transformation": "Test a low-pressure pet-care moment without requiring users to post data or complete a challenge.",
+    "qualified_hot_brief": false,
+    "automatically_published": false
+  }
+}
