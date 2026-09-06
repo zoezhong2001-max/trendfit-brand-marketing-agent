@@ -2,6 +2,19 @@
 
 All notable project versions are recorded here. GitHub is the canonical delivery surface for project artifacts.
 
+## [0.2.1] - 2026-09-06
+
+### Added
+
+- High-level marketing trend discovery Agent workflow that starts from a replaceable advertiser profile.
+- Three independent signal layers: broad culture, category and usage occasions, and brand-adjacent conversations.
+- Source-role framework derived from the existing creator anchors without hard-coding individual accounts.
+
+### Changed
+
+- Reframed Phase 2 as a cross-brand capability architecture before detailed collectors and task steps.
+- Moved account lists, batch sizes, multimodal implementation details, and scheduling into later iterations.
+
 ## [0.2.0] - 2026-09-06
 
 ### Added
