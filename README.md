@@ -10,6 +10,8 @@ The prototype separates external evidence from marketing judgment, then requires
 
 > Current milestone: the evidence-to-brief core workflow has been validated as a human-in-the-loop MVP. Multi-platform discovery, model orchestration, evaluation, and the product dashboard form the next build stages.
 
+**Current version: v0.2.0.** Phase 2 workflow design is documented in [Phase 2: Discovery & Evidence Workflow](docs/PHASE_2_WORKFLOW.md). Project changes are tracked in the [changelog](CHANGELOG.md); GitHub commits and version entries are the delivery record for future outputs.
+
 ## Why this project
 
 Most trend tools stop at ranked topics. Brand teams still need to know:
@@ -96,7 +98,7 @@ The model provides semantic interpretation. Python checks IDs, sources, versions
 ## Roadmap
 
 - **Phase 1 — Decision foundation:** evidence contracts, topic and brand objects, traceable opportunity cards and briefs, version gates, deterministic validation, and a working demo.
-- **Phase 2 — Discovery intelligence:** multi-source topic discovery, multimodal reading, independent-source clustering, cross-time momentum snapshots, and audio transcription.
+- **Phase 2 — Discovery intelligence (current):** multi-source topic discovery, multimodal reading, independent-source clustering, cross-time momentum snapshots, and audio transcription. See the [detailed build order](docs/PHASE_2_WORKFLOW.md).
 - **Phase 3 — Agent product:** scheduled collection, model/API orchestration, brand workspace and dashboard, human feedback loops, evaluation sets, campaign measurement, and reusable brand onboarding.
 
 ## Public-data note
