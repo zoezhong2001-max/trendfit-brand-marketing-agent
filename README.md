@@ -10,7 +10,7 @@ The prototype separates external evidence from marketing judgment, then requires
 
 > Current milestone: the evidence-to-brief core workflow has been validated as a human-in-the-loop MVP. Multi-platform discovery, model orchestration, evaluation, and the product dashboard form the next build stages.
 
-**Current version: v0.2.2.** The current milestone defines the product roadmap, Phase 2 Agent core, and the path to a clickable web demo. See the [product roadmap](docs/PRODUCT_ROADMAP.md) and [discovery workflow](docs/PHASE_2_WORKFLOW.md). Project changes are tracked in the [changelog](CHANGELOG.md); GitHub commits and version entries are the delivery record for future outputs.
+**Current version: v0.2.3.** The current milestone validates the reusable China-market workflow with Petlibro and Nayuki as two different advertiser categories over one shared trend pool. See the [cross-brand workflow](docs/V0.2.3_CROSS_BRAND_WORKFLOW.md), [product roadmap](docs/PRODUCT_ROADMAP.md), and [discovery workflow](docs/PHASE_2_WORKFLOW.md). Project changes are tracked in the [changelog](CHANGELOG.md); GitHub commits and version entries are the delivery record for future outputs.
 
 ## Why this project
 
@@ -67,6 +67,7 @@ Python 3.10+ is enough; runtime code uses only the standard library.
 
 ```bash
 python -m trendfit.cli examples/petlibro_demo.json
+python -m trendfit.cross_brand examples/cross_brand_demo.json
 python -m unittest discover -s tests -v
 ```
 
@@ -84,6 +85,8 @@ Expected demo status:
 ## MVP milestone
 
 The current MVP validates the full object chain from source evidence to topic card, brand assessment, opportunity card, and brief. It can preserve source lineage, distinguish a marketing method from a live topic, surface counter-context, downgrade an unsuitable idea to `rework`, and prevent unverified popularity from being presented as a qualified trend.
+
+The v0.2.3 demonstration adds a reusable advertiser profile and a complete brand-by-topic matrix. Petlibro and Nayuki receive different decisions from the same synthetic China-market topic pool; the code checks that topic facts remain brand-independent and that rejected or unverified candidates cannot become executable briefs.
 
 This repository publishes the reusable logic and a synthetic example. Raw social-media media, signed links, private research, account data, local paths, and credentials are deliberately excluded.
 

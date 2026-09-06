@@ -2,6 +2,19 @@
 
 All notable project versions are recorded here. GitHub is the canonical delivery surface for project artifacts.
 
+## [0.2.3] - 2026-09-06
+
+### Added
+
+- China-market cross-brand run with Petlibro and Nayuki over one shared synthetic trend pool.
+- Reusable advertiser profile, brand-independent topic, assessment matrix, and Brief contracts.
+- Validator and six tests for cross-category coverage, version lineage, rejected ideas, and unverified trends.
+- Documentation of how the private 2025 Naisnow strategy deck informed hypotheses without publishing personal data or treating the French plan as current China-market fact.
+
+### Changed
+
+- Set v0.2.4 view-data and feedback contracts as the bridge to the v0.3.0 web demo.
+
 ## [0.2.2] - 2026-09-06
 
 ### Added
