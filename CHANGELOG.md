@@ -2,6 +2,19 @@
 
 All notable project versions are recorded here. GitHub is the canonical delivery surface for project artifacts.
 
+## [0.2.2] - 2026-09-06
+
+### Added
+
+- Product roadmap from the current Agent-core stage to a clickable web demo and live source integration.
+- Phase 2 definition, six components to standardize, and cross-brand acceptance criteria.
+- Five-page demo concept centered on switching advertisers over a shared trend pool.
+
+### Changed
+
+- Separated the product roadmap into decision foundation, Agent core, web demo, and live-operation stages.
+- Set v0.2.3 cross-brand demonstration as the next implementation milestone.
+
 ## [0.2.1] - 2026-09-06
 
 ### Added
