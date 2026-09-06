@@ -10,7 +10,7 @@ The prototype separates external evidence from marketing judgment, then requires
 
 > Current milestone: the evidence-to-brief core workflow has been validated as a human-in-the-loop MVP. Multi-platform discovery, model orchestration, evaluation, and the product dashboard form the next build stages.
 
-**Current version: v0.2.3.** The current milestone validates the reusable China-market workflow with Petlibro and Nayuki as two different advertiser categories over one shared trend pool. See the [cross-brand workflow](docs/V0.2.3_CROSS_BRAND_WORKFLOW.md), [product roadmap](docs/PRODUCT_ROADMAP.md), and [discovery workflow](docs/PHASE_2_WORKFLOW.md). Project changes are tracked in the [changelog](CHANGELOG.md); GitHub commits and version entries are the delivery record for future outputs.
+**Current version: v0.2.4.** The Agent core now projects the Petlibro/Nayuki cross-brand run into stable JSON views for a web demo, with append-only human feedback kept separate from model decisions. See the [web data contract](docs/V0.2.4_WEB_DATA_CONTRACT.md), [cross-brand workflow](docs/V0.2.3_CROSS_BRAND_WORKFLOW.md), and [product roadmap](docs/PRODUCT_ROADMAP.md). Project changes are tracked in the [changelog](CHANGELOG.md); GitHub commits and version entries are the delivery record for future outputs.
 
 ## Why this project
 
@@ -68,6 +68,7 @@ Python 3.10+ is enough; runtime code uses only the standard library.
 ```bash
 python -m trendfit.cli examples/petlibro_demo.json
 python -m trendfit.cross_brand examples/cross_brand_demo.json
+python -m trendfit.views examples/cross_brand_demo.json --output /tmp/trendfit-web-data
 python -m unittest discover -s tests -v
 ```
 
@@ -88,6 +89,8 @@ The current MVP validates the full object chain from source evidence to topic ca
 
 The v0.2.3 demonstration adds a reusable advertiser profile and a complete brand-by-topic matrix. Petlibro and Nayuki receive different decisions from the same synthetic China-market topic pool; the code checks that topic facts remain brand-independent and that rejected or unverified candidates cannot become executable briefs.
 
+The v0.2.4 data layer exports brand, trend, opportunity, Brief, feedback, and validation views for the upcoming web demo. A manifest records version lineage and content hashes, while append-only feedback preserves the original model assessment.
+
 This repository publishes the reusable logic and a synthetic example. Raw social-media media, signed links, private research, account data, local paths, and credentials are deliberately excluded.
 
 ## AI collaboration
@@ -101,8 +104,8 @@ The model provides semantic interpretation. Python checks IDs, sources, versions
 ## Roadmap
 
 - **Phase 1 — Decision foundation:** evidence contracts, topic and brand objects, traceable opportunity cards and briefs, version gates, deterministic validation, and a working demo.
-- **Phase 2 — Agent core (current):** make brand profiles, trend objects, opportunity decisions, briefs, run history, and feedback reusable across brands and categories.
-- **Phase 3 — Web demo:** deliver a clickable trend feed, advertiser workspace, brand-specific opportunity ranking, evidence view, and Brief workspace.
+- **Phase 2 — Agent core:** reusable brand profiles, trend objects, opportunity decisions, briefs, run history, feedback, and frontend view data are now represented in the public MVP.
+- **Phase 3 — Web demo (next):** deliver a clickable trend feed, advertiser workspace, brand-specific opportunity ranking, evidence view, and Brief workspace.
 - **Phase 4 — Live operation:** add stable source adapters, refresh jobs, model orchestration, evaluation, and feedback learning. See the [full roadmap](docs/PRODUCT_ROADMAP.md).
 
 ## Public-data note

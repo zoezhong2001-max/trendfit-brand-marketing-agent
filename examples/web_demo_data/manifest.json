@@ -1,0 +1,37 @@
+{
+  "view_version": "0.2.4",
+  "run_id": "RUN-CN-CROSS-BRAND-001",
+  "source_run_version": "0.2.3",
+  "files": [
+    {
+      "name": "brands.json",
+      "sha256": "9943901644b7c789efc1e32a5180c77e690965c31ba09b84ecfbb30946035d36",
+      "bytes": 1456
+    },
+    {
+      "name": "trends.json",
+      "sha256": "46de877b2a1544e408d4dd6e892e07f3a888f0fbf36c0c758233c15e3b9662b5",
+      "bytes": 2964
+    },
+    {
+      "name": "opportunities.json",
+      "sha256": "f7e0b357f67556fb45ccabf1438dc50fa60d8e1edb3f2370f148ddd6d2453617",
+      "bytes": 4797
+    },
+    {
+      "name": "briefs.json",
+      "sha256": "5cbbbe227f953a6d342bea61ca840f096039a526814968f3b9d10c93e27d049a",
+      "bytes": 4460
+    },
+    {
+      "name": "feedback.json",
+      "sha256": "0216d91f9ddab912bca9e834030c5a7363572b51dfaec6d8aacd1a095397a4a5",
+      "bytes": 387
+    },
+    {
+      "name": "validation.json",
+      "sha256": "e3c7350d792e8a5acc528319cbe317de146be97ab01065c51a66d2e9d09b0534",
+      "bytes": 932
+    }
+  ]
+}

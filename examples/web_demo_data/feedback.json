@@ -1,0 +1,20 @@
+{
+  "view_version": "0.2.4",
+  "run_id": "RUN-CN-CROSS-BRAND-001",
+  "allowed_actions": [
+    "keep",
+    "reject",
+    "request_evidence",
+    "edit_brief"
+  ],
+  "required_fields": [
+    "id",
+    "assessment_id",
+    "actor",
+    "action",
+    "reason",
+    "created_at"
+  ],
+  "rule": "Feedback appends a human decision and never overwrites the model assessment.",
+  "records": []
+}

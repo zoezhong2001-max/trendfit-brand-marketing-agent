@@ -2,6 +2,19 @@
 
 All notable project versions are recorded here. GitHub is the canonical delivery surface for project artifacts.
 
+## [0.2.4] - 2026-09-06
+
+### Added
+
+- Stable frontend views for brands, trends, opportunities, Briefs, feedback, and validation.
+- Deterministic view generator with manifest hashes and source-run lineage.
+- Append-only human feedback contract that cannot overwrite model decisions.
+- Checked-in web-demo fixtures and five focused view-data tests.
+
+### Changed
+
+- Completed the public Phase 2 Agent-core data bridge and set v0.3.0 web demo as the next milestone.
+
 ## [0.2.3] - 2026-09-06
 
 ### Added

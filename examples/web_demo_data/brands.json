@@ -1,0 +1,50 @@
+{
+  "view_version": "0.2.4",
+  "run_id": "RUN-CN-CROSS-BRAND-001",
+  "market": "CN",
+  "brands": [
+    {
+      "id": "BR-PETLIBRO",
+      "version": 1,
+      "name": "Petlibro",
+      "category": "smart_pet_care",
+      "scenario": "hypothetical_china_entry",
+      "positioning": {
+        "statement": "以有温度的智能照护，帮助宠物家庭理解并安排日常照护。",
+        "status": "working_hypothesis"
+      },
+      "audiences": [
+        "希望了解宠物日常的养宠家庭",
+        "需要安排离家照护的人群",
+        "多宠家庭"
+      ],
+      "marketing_goals": [
+        "建立中国市场品牌认知",
+        "把智能功能转化为可信的照护价值"
+      ],
+      "unknown_count": 4
+    },
+    {
+      "id": "BR-NAIXUE",
+      "version": 1,
+      "name": "奈雪的茶",
+      "category": "fresh_tea_and_bakery",
+      "scenario": "china_market_demo",
+      "positioning": {
+        "statement": "以茶饮、烘焙和线下体验连接年轻人的日常社交、感官体验与情绪休息。",
+        "status": "historical_strategy_hypothesis"
+      },
+      "audiences": [
+        "城市年轻消费者",
+        "茶饮和烘焙消费者",
+        "重视社交与体验的人群"
+      ],
+      "marketing_goals": [
+        "建立与当下文化情绪的连接",
+        "强化产品体验与品牌记忆",
+        "创造线上线下参与"
+      ],
+      "unknown_count": 4
+    }
+  ]
+}

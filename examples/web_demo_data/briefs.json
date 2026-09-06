@@ -1,0 +1,131 @@
+{
+  "view_version": "0.2.4",
+  "run_id": "RUN-CN-CROSS-BRAND-001",
+  "briefs": [
+    {
+      "id": "BF-NAIXUE-WORKDAY",
+      "assessment_id": "AS-NAIXUE-WORKDAY",
+      "brand_id": "BR-NAIXUE",
+      "brand_version": 1,
+      "topic_id": "TP-WORKDAY-RESET",
+      "topic_version": 1,
+      "status": "draft_unverified",
+      "opportunity": "把产品和门店设计成下班后无需完成任务的短暂切换空间。",
+      "core_idea": "今天先缓十分钟",
+      "brand_role": "提供即时、低负担的味觉与空间休息。",
+      "consumer_action": "到店或点单即可参与，不要求公开打卡。",
+      "channels": [
+        "门店",
+        "短视频",
+        "品牌自有社交账号"
+      ],
+      "measurement": [
+        "相关产品选择",
+        "自然语境反馈",
+        "负面与反消费评论"
+      ],
+      "guardrails": [
+        "不承诺心理健康功效",
+        "不虚构产品",
+        "热点核验前不进入制作"
+      ],
+      "automatically_published": false,
+      "brand_name": "奈雪的茶",
+      "trend_title": "下班后十分钟回血",
+      "heat_status": "unverified"
+    },
+    {
+      "id": "BF-PETLIBRO-HOLIDAY",
+      "assessment_id": "AS-PETLIBRO-HOLIDAY",
+      "brand_id": "BR-PETLIBRO",
+      "brand_version": 1,
+      "topic_id": "TP-HOLIDAY-PET-CARE",
+      "topic_version": 1,
+      "status": "draft_unverified",
+      "opportunity": "用真实照护清单说明设备、亲友和上门照护各自承担什么。",
+      "core_idea": "离家之前，把照护交代清楚",
+      "brand_role": "提供可核验的日常照护信息，不替代人工照护。",
+      "consumer_action": "根据家庭情况检查喂食、饮水、观察和应急联系人。",
+      "channels": [
+        "内容平台",
+        "产品说明页",
+        "用户教育内容"
+      ],
+      "measurement": [
+        "清单完成",
+        "产品事实理解",
+        "风险问题反馈"
+      ],
+      "guardrails": [
+        "先确认中国产品服务",
+        "不作健康诊断",
+        "作为日历机会与实时热点分别标记"
+      ],
+      "automatically_published": false,
+      "brand_name": "Petlibro",
+      "trend_title": "长假前的宠物照护安排",
+      "heat_status": "unverified"
+    },
+    {
+      "id": "BF-PETLIBRO-LOWPRESSURE",
+      "assessment_id": "AS-PETLIBRO-LOWPRESSURE",
+      "brand_id": "BR-PETLIBRO",
+      "brand_version": 1,
+      "topic_id": "TP-LOW-PRESSURE-LIFE",
+      "topic_version": 1,
+      "status": "draft_unverified",
+      "opportunity": "测试一个不要求晒数据、不制造连续任务的人宠日常表达。",
+      "core_idea": "照顾好今天就够了",
+      "brand_role": "减少重复照护负担，同时尊重宠物和人的真实节奏。",
+      "consumer_action": "不设置挑战，只提供可选的轻量照护提示。",
+      "channels": [
+        "短视频",
+        "图文内容"
+      ],
+      "measurement": [
+        "品牌角色理解",
+        "反感语境",
+        "内容保存与自然讨论"
+      ],
+      "guardrails": [
+        "不鼓励公开宠物隐私数据",
+        "不把反消费情绪转成硬销售"
+      ],
+      "automatically_published": false,
+      "brand_name": "Petlibro",
+      "trend_title": "不打卡的低压生活",
+      "heat_status": "unverified"
+    },
+    {
+      "id": "BF-NAIXUE-LOWPRESSURE",
+      "assessment_id": "AS-NAIXUE-LOWPRESSURE",
+      "brand_id": "BR-NAIXUE",
+      "brand_version": 1,
+      "topic_id": "TP-LOW-PRESSURE-LIFE",
+      "topic_version": 1,
+      "status": "draft_unverified",
+      "opportunity": "让普通的一杯饮品成为不需要拍照证明的日常停顿。",
+      "core_idea": "这杯不用发朋友圈",
+      "brand_role": "提供轻松、无需表演的产品体验。",
+      "consumer_action": "自由选择，不设置连续打卡、排行榜或UGC任务。",
+      "channels": [
+        "门店",
+        "点单界面",
+        "品牌社交账号"
+      ],
+      "measurement": [
+        "自然反馈",
+        "反消费评论",
+        "复购与品牌记忆调研"
+      ],
+      "guardrails": [
+        "避免将低压包装成新的精致生活标准",
+        "不使用未经确认的产品与促销"
+      ],
+      "automatically_published": false,
+      "brand_name": "奈雪的茶",
+      "trend_title": "不打卡的低压生活",
+      "heat_status": "unverified"
+    }
+  ]
+}

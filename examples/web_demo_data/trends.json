@@ -1,0 +1,99 @@
+{
+  "view_version": "0.2.4",
+  "run_id": "RUN-CN-CROSS-BRAND-001",
+  "market": "CN",
+  "data_mode": "synthetic_demo",
+  "refreshed_at": "2026-09-06T15:00:00+08:00",
+  "trends": [
+    {
+      "id": "TP-WORKDAY-RESET",
+      "version": 1,
+      "title": "下班后十分钟回血",
+      "meaning": "城市年轻人用短暂、低负担的感官休息切换工作与个人生活。",
+      "signal_layer": "broad_culture",
+      "heat_status": "unverified",
+      "source_count": 1,
+      "evidence_gaps": [
+        "需要真实原帖与发布时间",
+        "需要跨账号使用与反对语境",
+        "需要时间快照"
+      ],
+      "brand_results": [
+        {
+          "brand_id": "BR-PETLIBRO",
+          "brand_name": "Petlibro",
+          "decision": "not_recommend",
+          "assessment_id": "AS-PETLIBRO-WORKDAY",
+          "has_brief": false
+        },
+        {
+          "brand_id": "BR-NAIXUE",
+          "brand_name": "奈雪的茶",
+          "decision": "recommend",
+          "assessment_id": "AS-NAIXUE-WORKDAY",
+          "has_brief": true
+        }
+      ]
+    },
+    {
+      "id": "TP-HOLIDAY-PET-CARE",
+      "version": 1,
+      "title": "长假前的宠物照护安排",
+      "meaning": "宠物家庭在离家前讨论喂食、饮水、观察和人工照护怎样组合。",
+      "signal_layer": "category_occasion",
+      "heat_status": "unverified",
+      "source_count": 1,
+      "evidence_gaps": [
+        "需要真实宠主讨论",
+        "需要区分日历需求与突发热点",
+        "需要核对品牌能力"
+      ],
+      "brand_results": [
+        {
+          "brand_id": "BR-PETLIBRO",
+          "brand_name": "Petlibro",
+          "decision": "rework",
+          "assessment_id": "AS-PETLIBRO-HOLIDAY",
+          "has_brief": true
+        },
+        {
+          "brand_id": "BR-NAIXUE",
+          "brand_name": "奈雪的茶",
+          "decision": "not_recommend",
+          "assessment_id": "AS-NAIXUE-HOLIDAY",
+          "has_brief": false
+        }
+      ]
+    },
+    {
+      "id": "TP-LOW-PRESSURE-LIFE",
+      "version": 1,
+      "title": "不打卡的低压生活",
+      "meaning": "人们用减少展示、减少任务的方式抵抗精致生活和自我优化压力。",
+      "signal_layer": "broad_culture",
+      "heat_status": "unverified",
+      "source_count": 1,
+      "evidence_gaps": [
+        "需要核验当前传播规模",
+        "需要理解反消费语境",
+        "需要确认参与是否会制造新任务"
+      ],
+      "brand_results": [
+        {
+          "brand_id": "BR-PETLIBRO",
+          "brand_name": "Petlibro",
+          "decision": "rework",
+          "assessment_id": "AS-PETLIBRO-LOWPRESSURE",
+          "has_brief": true
+        },
+        {
+          "brand_id": "BR-NAIXUE",
+          "brand_name": "奈雪的茶",
+          "decision": "rework",
+          "assessment_id": "AS-NAIXUE-LOWPRESSURE",
+          "has_brief": true
+        }
+      ]
+    }
+  ]
+}
