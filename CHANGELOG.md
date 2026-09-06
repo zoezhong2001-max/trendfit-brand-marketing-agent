@@ -2,6 +2,12 @@
 
 All notable project versions are recorded here. GitHub is the canonical delivery surface for project artifacts.
 
+## [0.3.1] - 2026-09-06
+
+- Completed vibe-coding STEP 05 with a code-derived architecture explanation, tradeoffs, technical lessons, risks, redesign notes, five-minute interview script, and common interview questions.
+- Replaced the outdated roadmap with a prioritized v0.4.0–v0.8.0 delivery plan covering PDF/PPT brand onboarding, real source adapters, topic clustering and freshness, multimodal understanding, online assessment, evaluation, cloud collaboration, and campaign learning.
+- Recommended v0.4.0 brand onboarding as the next vertical slice; no future product capability is represented as already implemented.
+
 ## [0.3.0] - 2026-09-06
 
 ### Added

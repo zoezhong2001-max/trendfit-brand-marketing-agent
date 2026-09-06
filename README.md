@@ -10,7 +10,7 @@ The prototype separates external evidence from marketing judgment, then requires
 
 > Current milestone: the evidence-to-brief workflow now runs as a local, human-in-the-loop website MVP. Multi-platform discovery, live model orchestration, and evaluation remain later stages.
 
-**Current version: v0.3.0.** The Radar Room website implements the approved PRD: cross-brand topic assessment, evidence details, editable Brief copies, brand-profile revisions, and append-only human feedback. See the [v0.3.0 delivery note](docs/V0.3.0_WEB_DEMO.md), [PRD](docs/V0.2.5_WEB_DEMO_PRD.md), and [project memory](memory.md).
+**Current version: v0.3.1.** The Radar Room website implements the approved PRD, and STEP 05 now documents the architecture, tradeoffs, interview narrative, and prioritized delivery plan. See the [STEP 05 learn-back](docs/V0.3.1_STEP5_LEARNBACK.md), [product roadmap](docs/PRODUCT_ROADMAP.md), [v0.3.0 website delivery](docs/V0.3.0_WEB_DEMO.md), and [project memory](memory.md).
 
 ## Why this project
 
@@ -116,7 +116,8 @@ The model provides semantic interpretation. Python checks IDs, sources, versions
 - **Phase 1 — Decision foundation:** evidence contracts, topic and brand objects, traceable opportunity cards and briefs, version gates, deterministic validation, and a working demo.
 - **Phase 2 — Agent core:** reusable brand profiles, trend objects, opportunity decisions, briefs, run history, feedback, and frontend view data are now represented in the public MVP.
 - **Phase 3 — Web demo (local MVP complete):** Radar Room implements the cross-brand decision journey and local human feedback in v0.3.0.
-- **Phase 4 — Live operation:** add stable source adapters, refresh jobs, model orchestration, evaluation, and feedback learning. See the [full roadmap](docs/PRODUCT_ROADMAP.md).
+- **Phase 4 — Brand onboarding:** parse PDF/PPT files into evidence-linked profiles and confirm them before assessment.
+- **Phase 5 — Live radar and online Agent:** add stable source adapters, topic freshness, model orchestration, evaluation, and feedback learning. See the [versioned roadmap](docs/PRODUCT_ROADMAP.md).
 
 ## Public-data note
 
