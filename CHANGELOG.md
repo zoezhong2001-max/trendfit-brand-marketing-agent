@@ -2,6 +2,18 @@
 
 All notable project versions are recorded here. GitHub is the canonical delivery surface for project artifacts.
 
+## [0.2.5] - 2026-09-06
+
+### Added
+
+- Review-ready Chinese PRD for the v0.3.0 web demo.
+- Five-page information architecture, interview demo story, data mapping, interaction rules, priorities, and acceptance criteria.
+- Explicit review choices for default brand, advertiser input, language, visual direction, Brief operations, and deployment.
+
+### Changed
+
+- Gated v0.3.0 implementation on user approval of the PRD.
+
 ## [0.2.4] - 2026-09-06
 
 ### Added

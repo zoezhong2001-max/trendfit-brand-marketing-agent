@@ -10,7 +10,7 @@ The prototype separates external evidence from marketing judgment, then requires
 
 > Current milestone: the evidence-to-brief core workflow has been validated as a human-in-the-loop MVP. Multi-platform discovery, model orchestration, evaluation, and the product dashboard form the next build stages.
 
-**Current version: v0.2.4.** The Agent core now projects the Petlibro/Nayuki cross-brand run into stable JSON views for a web demo, with append-only human feedback kept separate from model decisions. See the [web data contract](docs/V0.2.4_WEB_DATA_CONTRACT.md), [cross-brand workflow](docs/V0.2.3_CROSS_BRAND_WORKFLOW.md), and [product roadmap](docs/PRODUCT_ROADMAP.md). Project changes are tracked in the [changelog](CHANGELOG.md); GitHub commits and version entries are the delivery record for future outputs.
+**Current version: v0.2.5.** The web demo PRD is ready for review; implementation will begin only after product choices are confirmed. See the [web demo PRD](docs/V0.2.5_WEB_DEMO_PRD.md), [web data contract](docs/V0.2.4_WEB_DATA_CONTRACT.md), and [product roadmap](docs/PRODUCT_ROADMAP.md). Project changes are tracked in the [changelog](CHANGELOG.md); GitHub commits and version entries are the delivery record for future outputs.
 
 ## Why this project
 
@@ -105,7 +105,7 @@ The model provides semantic interpretation. Python checks IDs, sources, versions
 
 - **Phase 1 — Decision foundation:** evidence contracts, topic and brand objects, traceable opportunity cards and briefs, version gates, deterministic validation, and a working demo.
 - **Phase 2 — Agent core:** reusable brand profiles, trend objects, opportunity decisions, briefs, run history, feedback, and frontend view data are now represented in the public MVP.
-- **Phase 3 — Web demo (next):** deliver a clickable trend feed, advertiser workspace, brand-specific opportunity ranking, evidence view, and Brief workspace.
+- **Phase 3 — Web demo (PRD ready):** after PRD approval, deliver a clickable trend feed, advertiser workspace, brand-specific opportunity ranking, evidence view, and Brief workspace.
 - **Phase 4 — Live operation:** add stable source adapters, refresh jobs, model orchestration, evaluation, and feedback learning. See the [full roadmap](docs/PRODUCT_ROADMAP.md).
 
 ## Public-data note
