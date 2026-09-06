@@ -2,6 +2,18 @@
 
 All notable project versions are recorded here. GitHub is the canonical delivery surface for project artifacts.
 
+## [0.2.6] - 2026-09-06
+
+### Added
+
+- Three visibly distinct, responsive landing-page explorations: Signal Editorial, Radar Room, and Cultural Atlas.
+- Static comparison hub and a Chinese design rationale covering benefits, risks, and application fit.
+
+### Changed
+
+- Recommended Signal Editorial as the primary direction for the interview demo.
+- Paused before architecture and v0.3.0 implementation pending explicit visual confirmation.
+
 ## [0.2.5] - 2026-09-06
 
 ### Added
