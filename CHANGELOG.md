@@ -2,6 +2,20 @@
 
 All notable project versions are recorded here. GitHub is the canonical delivery surface for project artifacts.
 
+## [0.3.0] - 2026-09-06
+
+### Added
+
+- Local Radar Room website with topic browsing, search and filters, brand switching, evidence details, and Brief workbench.
+- Editable brand and Brief copies, guarded unsaved navigation, append-only human feedback, export, and browser-local persistence.
+- Versioned public website bundle with full source coverage, explicit synthetic and calendar states, content hashes, and browser-side validation.
+- Frontend contract tests, Python risk tests, production build checks, responsive browser QA, and CI coverage.
+
+### Changed
+
+- Completed vibe-coding STEP 04 and advanced the project from website architecture to a functional local MVP.
+- Kept live collection, online model generation, accounts, cloud storage, and public deployment outside this release.
+
 ## [0.2.7] - 2026-09-06
 
 - Confirmed Radar Room (B) as the website visual direction.

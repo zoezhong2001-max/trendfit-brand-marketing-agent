@@ -9,3 +9,10 @@ build/
 *.key
 raw-evidence/
 private/
+
+node_modules/
+.wrangler/
+.vinext/
+.next/
+*.tsbuildinfo
+.env.*

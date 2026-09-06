@@ -1,0 +1,100 @@
+{
+  "view_version": "0.3.0",
+  "run_id": "RUN-CN-WEB-001",
+  "market": "CN",
+  "brands": [
+    {
+      "id": "BR-PETLIBRO",
+      "version": 1,
+      "name": "Petlibro",
+      "category": "smart_pet_care",
+      "market": "CN",
+      "scenario": "hypothetical_china_entry",
+      "positioning": {
+        "statement": "以有温度的智能照护，帮助宠物家庭理解并安排日常照护。",
+        "status": "working_hypothesis"
+      },
+      "audiences": [
+        "希望了解宠物日常的养宠家庭",
+        "需要安排离家照护的人群",
+        "多宠家庭"
+      ],
+      "marketing_goals": [
+        "建立中国市场品牌认知",
+        "把智能功能转化为可信的照护价值"
+      ],
+      "permissions": [
+        "宠物与人的共同生活",
+        "日常照护效率",
+        "情感连接",
+        "负责任的宠物科技"
+      ],
+      "constraints": [
+        "不作疾病诊断或治疗承诺",
+        "不默认海外App、云服务、SKU和售后在中国可用"
+      ],
+      "unknowns": [
+        "中国上市计划",
+        "中国在售SKU与价格",
+        "中国服务能力",
+        "预算与渠道"
+      ],
+      "source_refs": [
+        "petlibro_public_materials",
+        "historical_user_research",
+        "hypothetical_china_scenario"
+      ],
+      "source_notes": [
+        "产品方向来自既有公开资料整理；中国上市、产品及服务条件尚未确认。",
+        "海外历史研究只作人群假设参考，不外推中国比例。"
+      ]
+    },
+    {
+      "id": "BR-NAIXUE",
+      "version": 1,
+      "name": "奈雪的茶",
+      "category": "fresh_tea_and_bakery",
+      "market": "CN",
+      "scenario": "china_market_demo",
+      "positioning": {
+        "statement": "以茶饮、烘焙和线下体验连接年轻人的日常社交、感官体验与情绪休息。",
+        "status": "historical_strategy_hypothesis"
+      },
+      "audiences": [
+        "城市年轻消费者",
+        "茶饮和烘焙消费者",
+        "重视社交与体验的人群"
+      ],
+      "marketing_goals": [
+        "建立与当下文化情绪的连接",
+        "强化产品体验与品牌记忆",
+        "创造线上线下参与"
+      ],
+      "permissions": [
+        "茶饮与烘焙体验",
+        "城市生活方式",
+        "轻社交与情绪关怀",
+        "季节感与感官创意"
+      ],
+      "constraints": [
+        "不使用未经支持的健康功效",
+        "不把法国市场策划、KPI或合作直接迁移到中国",
+        "不虚构在售产品或品牌合作"
+      ],
+      "unknowns": [
+        "本次中国营销目标",
+        "主推产品",
+        "预算与城市范围",
+        "当前品牌审核边界"
+      ],
+      "source_refs": [
+        "user_provided_naisnow_strategy_deck_2025",
+        "china_demo_assumptions"
+      ],
+      "source_notes": [
+        "用户2025年法国市场策划，仅提取策略启发。",
+        "中国人群、主推产品、门店资源及本次目标仍需广告主确认。"
+      ]
+    }
+  ]
+}

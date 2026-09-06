@@ -1,0 +1,44 @@
+{
+  "valid": true,
+  "run_id": "RUN-CN-WEB-001",
+  "market": "CN",
+  "brands": 2,
+  "categories": 2,
+  "topics": 3,
+  "assessments": 6,
+  "briefs": 4,
+  "decision_matrix": [
+    {
+      "brand": "Petlibro",
+      "topic": "下班后十分钟回血",
+      "decision": "not_recommend"
+    },
+    {
+      "brand": "奈雪的茶",
+      "topic": "下班后十分钟回血",
+      "decision": "recommend"
+    },
+    {
+      "brand": "Petlibro",
+      "topic": "长假前的宠物照护安排",
+      "decision": "rework"
+    },
+    {
+      "brand": "奈雪的茶",
+      "topic": "长假前的宠物照护安排",
+      "decision": "not_recommend"
+    },
+    {
+      "brand": "Petlibro",
+      "topic": "不打卡的低压生活",
+      "decision": "rework"
+    },
+    {
+      "brand": "奈雪的茶",
+      "topic": "不打卡的低压生活",
+      "decision": "rework"
+    }
+  ],
+  "semantic_truth_verified_by_code": false,
+  "view_version": "0.3.0"
+}

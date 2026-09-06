@@ -1,0 +1,37 @@
+{
+  "view_version": "0.3.0",
+  "run_id": "RUN-CN-WEB-001",
+  "source_run_version": "0.3.0",
+  "files": [
+    {
+      "name": "brands.json",
+      "sha256": "74e73807e8cf874b14f52b8a0a97f6a89d81c6b0303f264bb4bf2464195a6a40",
+      "bytes": 3097
+    },
+    {
+      "name": "trends.json",
+      "sha256": "d6a084ba4e9ca1ed44ef46692b90cae7a1fb4e180111b9f75593b2ed9fc27179",
+      "bytes": 5300
+    },
+    {
+      "name": "opportunities.json",
+      "sha256": "45c4c8614baac27dca2ec4e9fad549112c1cdf029b755ee60861bac2b6dbcd24",
+      "bytes": 4789
+    },
+    {
+      "name": "briefs.json",
+      "sha256": "a19973c08e878bf874f8b3092451d466353dbfa07d5b10d3a30dbca10a12e1f2",
+      "bytes": 6842
+    },
+    {
+      "name": "feedback.json",
+      "sha256": "39f4b13b162e39ba2f157d64cd40d2a812180624554511f780b65035b699ed5f",
+      "bytes": 379
+    },
+    {
+      "name": "validation.json",
+      "sha256": "86edff49ca49d7d80d0087a4ab14d70bdefa141ebdaf66f1037ce402de782899",
+      "bytes": 951
+    }
+  ]
+}

@@ -1,0 +1,460 @@
+{
+  "run": {
+    "id": "RUN-CN-WEB-001",
+    "version": "0.3.0",
+    "market": "CN",
+    "data_mode": "synthetic_demo",
+    "semantic_assessments": "curated_model_assisted_examples",
+    "generated_at": "2026-09-06T16:00:00+08:00"
+  },
+  "brands": [
+    {
+      "id": "BR-PETLIBRO",
+      "version": 1,
+      "name": "Petlibro",
+      "category": "smart_pet_care",
+      "market": "CN",
+      "scenario": "hypothetical_china_entry",
+      "positioning": {
+        "statement": "以有温度的智能照护，帮助宠物家庭理解并安排日常照护。",
+        "status": "working_hypothesis"
+      },
+      "audiences": [
+        "希望了解宠物日常的养宠家庭",
+        "需要安排离家照护的人群",
+        "多宠家庭"
+      ],
+      "marketing_goals": [
+        "建立中国市场品牌认知",
+        "把智能功能转化为可信的照护价值"
+      ],
+      "permissions": [
+        "宠物与人的共同生活",
+        "日常照护效率",
+        "情感连接",
+        "负责任的宠物科技"
+      ],
+      "constraints": [
+        "不作疾病诊断或治疗承诺",
+        "不默认海外App、云服务、SKU和售后在中国可用"
+      ],
+      "unknowns": [
+        "中国上市计划",
+        "中国在售SKU与价格",
+        "中国服务能力",
+        "预算与渠道"
+      ],
+      "source_refs": [
+        "petlibro_public_materials",
+        "historical_user_research",
+        "hypothetical_china_scenario"
+      ],
+      "source_notes": [
+        "产品方向来自既有公开资料整理；中国上市、产品及服务条件尚未确认。",
+        "海外历史研究只作人群假设参考，不外推中国比例。"
+      ]
+    },
+    {
+      "id": "BR-NAIXUE",
+      "version": 1,
+      "name": "奈雪的茶",
+      "category": "fresh_tea_and_bakery",
+      "market": "CN",
+      "scenario": "china_market_demo",
+      "positioning": {
+        "statement": "以茶饮、烘焙和线下体验连接年轻人的日常社交、感官体验与情绪休息。",
+        "status": "historical_strategy_hypothesis"
+      },
+      "audiences": [
+        "城市年轻消费者",
+        "茶饮和烘焙消费者",
+        "重视社交与体验的人群"
+      ],
+      "marketing_goals": [
+        "建立与当下文化情绪的连接",
+        "强化产品体验与品牌记忆",
+        "创造线上线下参与"
+      ],
+      "permissions": [
+        "茶饮与烘焙体验",
+        "城市生活方式",
+        "轻社交与情绪关怀",
+        "季节感与感官创意"
+      ],
+      "constraints": [
+        "不使用未经支持的健康功效",
+        "不把法国市场策划、KPI或合作直接迁移到中国",
+        "不虚构在售产品或品牌合作"
+      ],
+      "unknowns": [
+        "本次中国营销目标",
+        "主推产品",
+        "预算与城市范围",
+        "当前品牌审核边界"
+      ],
+      "source_refs": [
+        "user_provided_naisnow_strategy_deck_2025",
+        "china_demo_assumptions"
+      ],
+      "source_notes": [
+        "用户2025年法国市场策划，仅提取策略启发。",
+        "中国人群、主推产品、门店资源及本次目标仍需广告主确认。"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "TP-WORKDAY-RESET",
+      "version": 1,
+      "title": "下班后十分钟回血",
+      "meaning": "城市年轻人用短暂、低负担的感官休息切换工作与个人生活。",
+      "market": "CN",
+      "signal_layer": "broad_culture",
+      "brand_independent": true,
+      "source_refs": [
+        "synthetic_demo_source_workday_reset"
+      ],
+      "heat_status": "unverified",
+      "evidence_gaps": [
+        "需要真实原帖与发布时间",
+        "需要跨账号使用与反对语境",
+        "需要时间快照"
+      ],
+      "queue_type": "trend_candidate",
+      "published_at": null,
+      "collected_at": null,
+      "category_label": "城市节奏",
+      "data_mode": "synthetic_demo",
+      "tagline": "把工作留在上一分钟",
+      "sources": [
+        {
+          "id": "synthetic_demo_source_workday_reset",
+          "title": "跨品牌工作流合成候选 1",
+          "kind": "synthetic_demo",
+          "url": null,
+          "published_at": null,
+          "collected_at": null,
+          "role": "workflow_example",
+          "reading_coverage": "仅合成文本；无原帖、配图、视频或独立传播证据"
+        }
+      ]
+    },
+    {
+      "id": "TP-HOLIDAY-PET-CARE",
+      "version": 1,
+      "title": "长假前的宠物照护安排",
+      "meaning": "宠物家庭在离家前讨论喂食、饮水、观察和人工照护怎样组合。",
+      "market": "CN",
+      "signal_layer": "category_occasion",
+      "brand_independent": true,
+      "source_refs": [
+        "synthetic_demo_source_holiday_pet_care"
+      ],
+      "heat_status": "unverified",
+      "evidence_gaps": [
+        "需要真实宠主讨论",
+        "需要区分日历需求与突发热点",
+        "需要核对品牌能力"
+      ],
+      "queue_type": "calendar",
+      "published_at": null,
+      "collected_at": null,
+      "category_label": "照护场景",
+      "data_mode": "synthetic_demo",
+      "tagline": "离家不等于照护离线",
+      "sources": [
+        {
+          "id": "synthetic_demo_source_holiday_pet_care",
+          "title": "跨品牌工作流合成候选 2",
+          "kind": "synthetic_demo",
+          "url": null,
+          "published_at": null,
+          "collected_at": null,
+          "role": "workflow_example",
+          "reading_coverage": "仅合成文本；无原帖、配图、视频或独立传播证据"
+        }
+      ]
+    },
+    {
+      "id": "TP-LOW-PRESSURE-LIFE",
+      "version": 1,
+      "title": "不打卡的低压生活",
+      "meaning": "人们用减少展示、减少任务的方式抵抗精致生活和自我优化压力。",
+      "market": "CN",
+      "signal_layer": "broad_culture",
+      "brand_independent": true,
+      "source_refs": [
+        "synthetic_demo_source_low_pressure_life"
+      ],
+      "heat_status": "unverified",
+      "evidence_gaps": [
+        "需要核验当前传播规模",
+        "需要理解反消费语境",
+        "需要确认参与是否会制造新任务"
+      ],
+      "queue_type": "trend_candidate",
+      "published_at": null,
+      "collected_at": null,
+      "category_label": "生活态度",
+      "data_mode": "synthetic_demo",
+      "tagline": "松弛，也不必被看见",
+      "sources": [
+        {
+          "id": "synthetic_demo_source_low_pressure_life",
+          "title": "跨品牌工作流合成候选 3",
+          "kind": "synthetic_demo",
+          "url": null,
+          "published_at": null,
+          "collected_at": null,
+          "role": "workflow_example",
+          "reading_coverage": "仅合成文本；无原帖、配图、视频或独立传播证据"
+        }
+      ]
+    }
+  ],
+  "assessments": [
+    {
+      "id": "AS-PETLIBRO-WORKDAY",
+      "brand_id": "BR-PETLIBRO",
+      "brand_version": 1,
+      "topic_id": "TP-WORKDAY-RESET",
+      "topic_version": 1,
+      "decision": "not_recommend",
+      "reasons": [
+        "品牌主要作用发生在家庭宠物照护场景",
+        "强行进入下班饮品式休息会削弱品牌角色"
+      ],
+      "counterargument": "养宠人下班回家也存在情绪切换，但当前话题没有提供足够的宠物连接。",
+      "evidence_gap": "需要自然出现的人宠下班场景后再评"
+    },
+    {
+      "id": "AS-NAIXUE-WORKDAY",
+      "brand_id": "BR-NAIXUE",
+      "brand_version": 1,
+      "topic_id": "TP-WORKDAY-RESET",
+      "topic_version": 1,
+      "decision": "recommend",
+      "reasons": [
+        "茶饮、烘焙和门店可以直接承接短暂感官休息",
+        "产品体验与城市年轻人的下班场景接近"
+      ],
+      "counterargument": "如果要求拍照打卡或制造复杂任务，会破坏低负担休息的动机。",
+      "evidence_gap": "热点热度和本次主推产品仍待确认"
+    },
+    {
+      "id": "AS-PETLIBRO-HOLIDAY",
+      "brand_id": "BR-PETLIBRO",
+      "brand_version": 1,
+      "topic_id": "TP-HOLIDAY-PET-CARE",
+      "topic_version": 1,
+      "decision": "rework",
+      "reasons": [
+        "离家照护与品牌能力方向高度相关",
+        "品牌可以帮助用户理解设备与人工照护的分工"
+      ],
+      "counterargument": "这是可预期的日历场景，未必构成实时热点；设备也不能替代人工照护。",
+      "evidence_gap": "需要核验当前讨论增长及中国产品服务能力"
+    },
+    {
+      "id": "AS-NAIXUE-HOLIDAY",
+      "brand_id": "BR-NAIXUE",
+      "brand_version": 1,
+      "topic_id": "TP-HOLIDAY-PET-CARE",
+      "topic_version": 1,
+      "decision": "not_recommend",
+      "reasons": [
+        "宠物离家照护不是茶饮品牌可以解决的核心问题",
+        "缺少可信的产品或服务角色"
+      ],
+      "counterargument": "宠物友好门店或公益合作可能建立邻近连接，但需要真实资源和长期承诺。",
+      "evidence_gap": "当前没有足以支持品牌参与的事实"
+    },
+    {
+      "id": "AS-PETLIBRO-LOWPRESSURE",
+      "brand_id": "BR-PETLIBRO",
+      "brand_version": 1,
+      "topic_id": "TP-LOW-PRESSURE-LIFE",
+      "topic_version": 1,
+      "decision": "rework",
+      "reasons": [
+        "减少照护焦虑可以与低压生活建立连接",
+        "品牌必须证明是减少负担而不是增加监控任务"
+      ],
+      "counterargument": "记录、挑战或数据展示可能重新制造自我优化压力。",
+      "evidence_gap": "需要产品适配与反感语境测试"
+    },
+    {
+      "id": "AS-NAIXUE-LOWPRESSURE",
+      "brand_id": "BR-NAIXUE",
+      "brand_version": 1,
+      "topic_id": "TP-LOW-PRESSURE-LIFE",
+      "topic_version": 1,
+      "decision": "rework",
+      "reasons": [
+        "一杯饮品可以承接不需要证明的日常暂停",
+        "历史策略中的情绪关怀可作为创意假设"
+      ],
+      "counterargument": "把低压生活包装成消费任务，可能与反消费语境冲突。",
+      "evidence_gap": "需要验证用户是否接受品牌进入该语境"
+    }
+  ],
+  "briefs": [
+    {
+      "id": "BF-NAIXUE-WORKDAY",
+      "assessment_id": "AS-NAIXUE-WORKDAY",
+      "brand_id": "BR-NAIXUE",
+      "brand_version": 1,
+      "topic_id": "TP-WORKDAY-RESET",
+      "topic_version": 1,
+      "status": "draft_unverified",
+      "opportunity": "把产品和门店设计成下班后无需完成任务的短暂切换空间。",
+      "core_idea": "今天先缓十分钟",
+      "brand_role": "提供即时、低负担的味觉与空间休息。",
+      "consumer_action": "到店或点单即可参与，不要求公开打卡。",
+      "channels": [
+        "门店",
+        "短视频",
+        "品牌自有社交账号"
+      ],
+      "measurement": [
+        "相关产品选择",
+        "自然语境反馈",
+        "负面与反消费评论"
+      ],
+      "guardrails": [
+        "不承诺心理健康功效",
+        "不虚构产品",
+        "热点核验前不进入制作"
+      ],
+      "automatically_published": false,
+      "queue_type": "trend_candidate",
+      "source_refs": [
+        "synthetic_demo_source_workday_reset"
+      ],
+      "hotspot_mechanism": "城市年轻人用短暂、低负担的感官休息切换工作与个人生活。",
+      "brand_transformation": "把产品和门店设计成下班后无需完成任务的短暂切换空间。",
+      "exit_conditions": [
+        "出现与原意相反的参与反馈时暂停。",
+        "产品能力或合作条件无法核实时停止执行。",
+        "热度未核验或属于日历支线时，不作为实时热点方案发布。"
+      ]
+    },
+    {
+      "id": "BF-PETLIBRO-HOLIDAY",
+      "assessment_id": "AS-PETLIBRO-HOLIDAY",
+      "brand_id": "BR-PETLIBRO",
+      "brand_version": 1,
+      "topic_id": "TP-HOLIDAY-PET-CARE",
+      "topic_version": 1,
+      "status": "draft_unverified",
+      "opportunity": "用真实照护清单说明设备、亲友和上门照护各自承担什么。",
+      "core_idea": "离家之前，把照护交代清楚",
+      "brand_role": "提供可核验的日常照护信息，不替代人工照护。",
+      "consumer_action": "根据家庭情况检查喂食、饮水、观察和应急联系人。",
+      "channels": [
+        "内容平台",
+        "产品说明页",
+        "用户教育内容"
+      ],
+      "measurement": [
+        "清单完成",
+        "产品事实理解",
+        "风险问题反馈"
+      ],
+      "guardrails": [
+        "先确认中国产品服务",
+        "不作健康诊断",
+        "作为日历机会与实时热点分别标记"
+      ],
+      "automatically_published": false,
+      "queue_type": "calendar",
+      "source_refs": [
+        "synthetic_demo_source_holiday_pet_care"
+      ],
+      "hotspot_mechanism": "宠物家庭在离家前讨论喂食、饮水、观察和人工照护怎样组合。",
+      "brand_transformation": "用真实照护清单说明设备、亲友和上门照护各自承担什么。",
+      "exit_conditions": [
+        "出现与原意相反的参与反馈时暂停。",
+        "产品能力或合作条件无法核实时停止执行。",
+        "热度未核验或属于日历支线时，不作为实时热点方案发布。"
+      ]
+    },
+    {
+      "id": "BF-PETLIBRO-LOWPRESSURE",
+      "assessment_id": "AS-PETLIBRO-LOWPRESSURE",
+      "brand_id": "BR-PETLIBRO",
+      "brand_version": 1,
+      "topic_id": "TP-LOW-PRESSURE-LIFE",
+      "topic_version": 1,
+      "status": "draft_unverified",
+      "opportunity": "测试一个不要求晒数据、不制造连续任务的人宠日常表达。",
+      "core_idea": "照顾好今天就够了",
+      "brand_role": "减少重复照护负担，同时尊重宠物和人的真实节奏。",
+      "consumer_action": "不设置挑战，只提供可选的轻量照护提示。",
+      "channels": [
+        "短视频",
+        "图文内容"
+      ],
+      "measurement": [
+        "品牌角色理解",
+        "反感语境",
+        "内容保存与自然讨论"
+      ],
+      "guardrails": [
+        "不鼓励公开宠物隐私数据",
+        "不把反消费情绪转成硬销售"
+      ],
+      "automatically_published": false,
+      "queue_type": "trend_candidate",
+      "source_refs": [
+        "synthetic_demo_source_low_pressure_life"
+      ],
+      "hotspot_mechanism": "人们用减少展示、减少任务的方式抵抗精致生活和自我优化压力。",
+      "brand_transformation": "测试一个不要求晒数据、不制造连续任务的人宠日常表达。",
+      "exit_conditions": [
+        "出现与原意相反的参与反馈时暂停。",
+        "产品能力或合作条件无法核实时停止执行。",
+        "热度未核验或属于日历支线时，不作为实时热点方案发布。"
+      ]
+    },
+    {
+      "id": "BF-NAIXUE-LOWPRESSURE",
+      "assessment_id": "AS-NAIXUE-LOWPRESSURE",
+      "brand_id": "BR-NAIXUE",
+      "brand_version": 1,
+      "topic_id": "TP-LOW-PRESSURE-LIFE",
+      "topic_version": 1,
+      "status": "draft_unverified",
+      "opportunity": "让普通的一杯饮品成为不需要拍照证明的日常停顿。",
+      "core_idea": "这杯不用发朋友圈",
+      "brand_role": "提供轻松、无需表演的产品体验。",
+      "consumer_action": "自由选择，不设置连续打卡、排行榜或UGC任务。",
+      "channels": [
+        "门店",
+        "点单界面",
+        "品牌社交账号"
+      ],
+      "measurement": [
+        "自然反馈",
+        "反消费评论",
+        "复购与品牌记忆调研"
+      ],
+      "guardrails": [
+        "避免将低压包装成新的精致生活标准",
+        "不使用未经确认的产品与促销"
+      ],
+      "automatically_published": false,
+      "queue_type": "trend_candidate",
+      "source_refs": [
+        "synthetic_demo_source_low_pressure_life"
+      ],
+      "hotspot_mechanism": "人们用减少展示、减少任务的方式抵抗精致生活和自我优化压力。",
+      "brand_transformation": "让普通的一杯饮品成为不需要拍照证明的日常停顿。",
+      "exit_conditions": [
+        "出现与原意相反的参与反馈时暂停。",
+        "产品能力或合作条件无法核实时停止执行。",
+        "热度未核验或属于日历支线时，不作为实时热点方案发布。"
+      ]
+    }
+  ]
+}

@@ -72,6 +72,12 @@ def validate_cross_brand_run(data):
 
     brief_assessments = set()
     for brief in briefs.values():
+        if brief["status"] not in {"draft_unverified", "ready_for_planning"}:
+            raise ValueError("unsupported brief status")
+        if brief["assessment_id"] in brief_assessments:
+            raise ValueError("duplicate brief for assessment")
+        if brief["status"] == "ready_for_planning" and brief.get("queue_type", "trend_candidate") != "trend_candidate":
+            raise ValueError("calendar or evergreen cannot become a ready trend brief")
         assessment = assessments.get(brief["assessment_id"])
         if not assessment:
             raise ValueError("brief references unknown assessment")

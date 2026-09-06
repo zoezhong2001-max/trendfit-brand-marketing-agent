@@ -1,0 +1,144 @@
+{
+  "view_version": "0.3.0",
+  "run_id": "RUN-CN-WEB-001",
+  "opportunities": [
+    {
+      "assessment_id": "AS-PETLIBRO-WORKDAY",
+      "brand": {
+        "id": "BR-PETLIBRO",
+        "version": 1,
+        "name": "Petlibro",
+        "category": "smart_pet_care"
+      },
+      "trend": {
+        "id": "TP-WORKDAY-RESET",
+        "version": 1,
+        "title": "下班后十分钟回血",
+        "heat_status": "unverified"
+      },
+      "decision": "not_recommend",
+      "reasons": [
+        "品牌主要作用发生在家庭宠物照护场景",
+        "强行进入下班饮品式休息会削弱品牌角色"
+      ],
+      "counterargument": "养宠人下班回家也存在情绪切换，但当前话题没有提供足够的宠物连接。",
+      "evidence_gap": "需要自然出现的人宠下班场景后再评",
+      "brief_id": null
+    },
+    {
+      "assessment_id": "AS-NAIXUE-WORKDAY",
+      "brand": {
+        "id": "BR-NAIXUE",
+        "version": 1,
+        "name": "奈雪的茶",
+        "category": "fresh_tea_and_bakery"
+      },
+      "trend": {
+        "id": "TP-WORKDAY-RESET",
+        "version": 1,
+        "title": "下班后十分钟回血",
+        "heat_status": "unverified"
+      },
+      "decision": "recommend",
+      "reasons": [
+        "茶饮、烘焙和门店可以直接承接短暂感官休息",
+        "产品体验与城市年轻人的下班场景接近"
+      ],
+      "counterargument": "如果要求拍照打卡或制造复杂任务，会破坏低负担休息的动机。",
+      "evidence_gap": "热点热度和本次主推产品仍待确认",
+      "brief_id": "BF-NAIXUE-WORKDAY"
+    },
+    {
+      "assessment_id": "AS-PETLIBRO-HOLIDAY",
+      "brand": {
+        "id": "BR-PETLIBRO",
+        "version": 1,
+        "name": "Petlibro",
+        "category": "smart_pet_care"
+      },
+      "trend": {
+        "id": "TP-HOLIDAY-PET-CARE",
+        "version": 1,
+        "title": "长假前的宠物照护安排",
+        "heat_status": "unverified"
+      },
+      "decision": "rework",
+      "reasons": [
+        "离家照护与品牌能力方向高度相关",
+        "品牌可以帮助用户理解设备与人工照护的分工"
+      ],
+      "counterargument": "这是可预期的日历场景，未必构成实时热点；设备也不能替代人工照护。",
+      "evidence_gap": "需要核验当前讨论增长及中国产品服务能力",
+      "brief_id": "BF-PETLIBRO-HOLIDAY"
+    },
+    {
+      "assessment_id": "AS-NAIXUE-HOLIDAY",
+      "brand": {
+        "id": "BR-NAIXUE",
+        "version": 1,
+        "name": "奈雪的茶",
+        "category": "fresh_tea_and_bakery"
+      },
+      "trend": {
+        "id": "TP-HOLIDAY-PET-CARE",
+        "version": 1,
+        "title": "长假前的宠物照护安排",
+        "heat_status": "unverified"
+      },
+      "decision": "not_recommend",
+      "reasons": [
+        "宠物离家照护不是茶饮品牌可以解决的核心问题",
+        "缺少可信的产品或服务角色"
+      ],
+      "counterargument": "宠物友好门店或公益合作可能建立邻近连接，但需要真实资源和长期承诺。",
+      "evidence_gap": "当前没有足以支持品牌参与的事实",
+      "brief_id": null
+    },
+    {
+      "assessment_id": "AS-PETLIBRO-LOWPRESSURE",
+      "brand": {
+        "id": "BR-PETLIBRO",
+        "version": 1,
+        "name": "Petlibro",
+        "category": "smart_pet_care"
+      },
+      "trend": {
+        "id": "TP-LOW-PRESSURE-LIFE",
+        "version": 1,
+        "title": "不打卡的低压生活",
+        "heat_status": "unverified"
+      },
+      "decision": "rework",
+      "reasons": [
+        "减少照护焦虑可以与低压生活建立连接",
+        "品牌必须证明是减少负担而不是增加监控任务"
+      ],
+      "counterargument": "记录、挑战或数据展示可能重新制造自我优化压力。",
+      "evidence_gap": "需要产品适配与反感语境测试",
+      "brief_id": "BF-PETLIBRO-LOWPRESSURE"
+    },
+    {
+      "assessment_id": "AS-NAIXUE-LOWPRESSURE",
+      "brand": {
+        "id": "BR-NAIXUE",
+        "version": 1,
+        "name": "奈雪的茶",
+        "category": "fresh_tea_and_bakery"
+      },
+      "trend": {
+        "id": "TP-LOW-PRESSURE-LIFE",
+        "version": 1,
+        "title": "不打卡的低压生活",
+        "heat_status": "unverified"
+      },
+      "decision": "rework",
+      "reasons": [
+        "一杯饮品可以承接不需要证明的日常暂停",
+        "历史策略中的情绪关怀可作为创意假设"
+      ],
+      "counterargument": "把低压生活包装成消费任务，可能与反消费语境冲突。",
+      "evidence_gap": "需要验证用户是否接受品牌进入该语境",
+      "brief_id": "BF-NAIXUE-LOWPRESSURE"
+    }
+  ]
+}

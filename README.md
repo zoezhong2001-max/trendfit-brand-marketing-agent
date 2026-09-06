@@ -8,9 +8,9 @@ TrendFit explores one question: when a topic is popular, should a specific brand
 
 The prototype separates external evidence from marketing judgment, then requires every proposed brief to trace back to a topic card and source material. It is demonstrated with a hypothetical Petlibro China-entry scenario. No real China launch, local SKU, price, service, or campaign approval is assumed.
 
-> Current milestone: the evidence-to-brief core workflow has been validated as a human-in-the-loop MVP. Multi-platform discovery, model orchestration, evaluation, and the product dashboard form the next build stages.
+> Current milestone: the evidence-to-brief workflow now runs as a local, human-in-the-loop website MVP. Multi-platform discovery, live model orchestration, and evaluation remain later stages.
 
-**Current version: v0.2.7.** Radar Room (B) is selected. [STEP 03: website architecture and implementation plan](docs/V0.2.7_WEBSITE_ARCHITECTURE.md) is ready; website implementation awaits STEP 04 confirmation. See [PRD](docs/V0.2.5_WEB_DEMO_PRD.md) and [project memory](memory.md).
+**Current version: v0.3.0.** The Radar Room website implements the approved PRD: cross-brand topic assessment, evidence details, editable Brief copies, brand-profile revisions, and append-only human feedback. See the [v0.3.0 delivery note](docs/V0.3.0_WEB_DEMO.md), [PRD](docs/V0.2.5_WEB_DEMO_PRD.md), and [project memory](memory.md).
 
 ## Why this project
 
@@ -68,9 +68,19 @@ Python 3.10+ is enough; runtime code uses only the standard library.
 ```bash
 python -m trendfit.cli examples/petlibro_demo.json
 python -m trendfit.cross_brand examples/cross_brand_demo.json
-python -m trendfit.views examples/cross_brand_demo.json --output /tmp/trendfit-web-data
+python -m trendfit.web_data --output /tmp/trendfit-web-data-v030
 python -m unittest discover -s tests -v
 ```
+
+Run the local website with Node.js 22.13+:
+
+```bash
+cd web
+npm ci
+npm run dev
+```
+
+Open the printed local address. The shortest interview path is: keep Nayuki selected → open “下班后十分钟回血” → inspect the evidence and counterargument → open and edit the Brief → switch to Petlibro to show the same topic becoming “not recommended.” Browser edits and feedback stay on that device.
 
 Expected demo status:
 
@@ -85,7 +95,7 @@ Expected demo status:
 
 ## MVP milestone
 
-The current MVP validates the full object chain from source evidence to topic card, brand assessment, opportunity card, and brief. It can preserve source lineage, distinguish a marketing method from a live topic, surface counter-context, downgrade an unsuitable idea to `rework`, and prevent unverified popularity from being presented as a qualified trend.
+The current MVP validates and demonstrates the full object chain from source evidence to topic card, brand assessment, opportunity card, and brief. It preserves source lineage, distinguishes a marketing method from a live topic, surfaces counter-context, downgrades an unsuitable idea to `rework`, and prevents unverified popularity from being presented as a qualified trend.
 
 The v0.2.3 demonstration adds a reusable advertiser profile and a complete brand-by-topic matrix. Petlibro and Nayuki receive different decisions from the same synthetic China-market topic pool; the code checks that topic facts remain brand-independent and that rejected or unverified candidates cannot become executable briefs.
 
@@ -105,7 +115,7 @@ The model provides semantic interpretation. Python checks IDs, sources, versions
 
 - **Phase 1 — Decision foundation:** evidence contracts, topic and brand objects, traceable opportunity cards and briefs, version gates, deterministic validation, and a working demo.
 - **Phase 2 — Agent core:** reusable brand profiles, trend objects, opportunity decisions, briefs, run history, feedback, and frontend view data are now represented in the public MVP.
-- **Phase 3 — Web demo (architecture ready):** B is confirmed; the local website implementation is planned in STEP 03.
+- **Phase 3 — Web demo (local MVP complete):** Radar Room implements the cross-brand decision journey and local human feedback in v0.3.0.
 - **Phase 4 — Live operation:** add stable source adapters, refresh jobs, model orchestration, evaluation, and feedback learning. See the [full roadmap](docs/PRODUCT_ROADMAP.md).
 
 ## Public-data note
