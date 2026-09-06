@@ -2,6 +2,13 @@
 
 All notable project versions are recorded here. GitHub is the canonical delivery surface for project artifacts.
 
+## [0.2.7] - 2026-09-06
+
+- Confirmed Radar Room (B) as the website visual direction.
+- Added STEP 03 architecture, PRD-to-page mapping, state and data gap analysis, future collection boundary, and five build checkpoints.
+- Added durable project memory; website implementation awaits STEP 04 confirmation.
+- No production website code or live data services added.
+
 ## [0.2.6] - 2026-09-06
 
 ### Added

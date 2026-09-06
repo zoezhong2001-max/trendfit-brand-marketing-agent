@@ -10,7 +10,7 @@ The prototype separates external evidence from marketing judgment, then requires
 
 > Current milestone: the evidence-to-brief core workflow has been validated as a human-in-the-loop MVP. Multi-platform discovery, model orchestration, evaluation, and the product dashboard form the next build stages.
 
-**Current version: v0.2.6.** Three distinct landing-page directions are ready for visual selection; application architecture and v0.3.0 implementation have not started. See the [design comparison](docs/V0.2.6_LANDING_DIRECTIONS.md), [web demo PRD](docs/V0.2.5_WEB_DEMO_PRD.md), and [web data contract](docs/V0.2.4_WEB_DATA_CONTRACT.md). Project changes are tracked in the [changelog](CHANGELOG.md); GitHub commits and version entries are the delivery record for future outputs.
+**Current version: v0.2.7.** Radar Room (B) is selected. [STEP 03: website architecture and implementation plan](docs/V0.2.7_WEBSITE_ARCHITECTURE.md) is ready; website implementation awaits STEP 04 confirmation. See [PRD](docs/V0.2.5_WEB_DEMO_PRD.md) and [project memory](memory.md).
 
 ## Why this project
 
@@ -105,7 +105,7 @@ The model provides semantic interpretation. Python checks IDs, sources, versions
 
 - **Phase 1 — Decision foundation:** evidence contracts, topic and brand objects, traceable opportunity cards and briefs, version gates, deterministic validation, and a working demo.
 - **Phase 2 — Agent core:** reusable brand profiles, trend objects, opportunity decisions, briefs, run history, feedback, and frontend view data are now represented in the public MVP.
-- **Phase 3 — Web demo (visual choice pending):** PRD defaults are approved; three landing directions are ready. After visual confirmation, complete architecture planning before implementation.
+- **Phase 3 — Web demo (architecture ready):** B is confirmed; the local website implementation is planned in STEP 03.
 - **Phase 4 — Live operation:** add stable source adapters, refresh jobs, model orchestration, evaluation, and feedback learning. See the [full roadmap](docs/PRODUCT_ROADMAP.md).
 
 ## Public-data note
