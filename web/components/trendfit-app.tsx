@@ -5,7 +5,6 @@ import {
   ArrowLeft,
   ArrowRight,
   Radar,
-  Layers3,
   FileText,
   ScanLine,
   Search,
@@ -14,7 +13,6 @@ import {
   ShieldCheck,
   AlertTriangle,
   Bookmark,
-  History,
   Download,
   Copy,
   Pencil,
@@ -54,6 +52,8 @@ import {
   type Decision,
   type Topic,
 } from '@/lib/data';
+import WorkspaceSidebar from './workspace-sidebar';
+import { readWorkspaceBrand, writeWorkspaceBrand } from '@/lib/workspace-context';
 const order: Decision[] = [
   'recommend',
   'rework',
@@ -157,6 +157,9 @@ export default function TrendFit() {
             '本机记录无法读取或版本不匹配。原记录已保留，请先导出备份，再恢复空白工作区。',
           );
         }
+        const selectedBrand = readWorkspaceBrand(d.brands.map((brand) => brand.id), s.selectedBrand);
+        if (selectedBrand !== s.selectedBrand) s = { ...s, selectedBrand };
+        writeWorkspaceBrand(selectedBrand);
         setStore(s);
         setData(d);
       })
@@ -314,6 +317,9 @@ function Workspace({ data, initial }: { data: Bundle; initial: Store }) {
   }, [dirty, route, store, data]);
   useEffect(() => {
     setRoute(location.hash.slice(1) || '/');
+    if (new URLSearchParams(location.search).get('panel') === 'feedback') {
+      setHistory(true);
+    }
   }, []);
   useEffect(() => {
     if (!dirty) return;
@@ -385,6 +391,7 @@ function Workspace({ data, initial }: { data: Bundle; initial: Store }) {
   }, [store, brand.id]);
   function switchBrand(b: string) {
     if (b === brand.id) return;
+    writeWorkspaceBrand(b);
     let target = route;
     if (routeBrief) {
       const bf = data.briefs.find(
@@ -713,46 +720,13 @@ function Workspace({ data, initial }: { data: Bundle; initial: Store }) {
   const isHome = route === '/';
   return (
     <div className="shell">
-      <aside className="sidebar">
-        <NavLink to="/">
-          <div className="logo">
-            <Radar size={27} /> TrendFit<span>RADAR ROOM</span>
-          </div>
-        </NavLink>
-        <p className="eyebrow">品牌营销工作台</p>
-        <nav>
-          <Button
-            className={'nav ' + (isHome ? 'active' : '')}
-            onClick={() => navigate({ route: '/' })}
-          >
-            <Radar size={19} /> 热点雷达
-          </Button>
-          <Button
-            className={'nav ' + (route === '/brands' ? 'active' : '')}
-            onClick={() => navigate({ route: '/brands' })}
-          >
-            <Layers3 size={19} /> 品牌工作区
-          </Button>
-          <Button className="nav" onClick={() => setHistory(true)}>
-            <History size={19} /> 决策记录{' '}
-            <span className="nav-count">{store.feedback.length}</span>
-          </Button>
-        </nav>
-        <div className="sidebar-story">
-          <span className="crosshair">+</span>
-          <p>
-            不是每个热点，
-            <br />
-            都值得品牌跟进。
-          </p>
-          <span>先理解，再参与。</span>
-        </div>
-        <div className="sidefoot">
-          <i /> 中国市场
-          <br />
-          v0.3.0 · 本机工作区
-        </div>
-      </aside>
+      <WorkspaceSidebar
+        active={route === '/brands' ? 'brand' : route.startsWith('/briefs/') ? 'decision' : 'radar'}
+        subView={route === '/brands' ? 'profile' : route.startsWith('/briefs/') ? 'brief' : undefined}
+        brandId={brand.id}
+        feedbackCount={store.feedback.length}
+        currentBriefHref={route.startsWith('/briefs/') ? `/#${route}` : undefined}
+      />
       <main className="main">
         <header className="topbar">
           <span>

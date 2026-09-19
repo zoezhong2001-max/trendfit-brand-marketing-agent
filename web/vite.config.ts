@@ -54,6 +54,8 @@ export default defineConfig(async () => {
       sites(),
       cloudflare({
         viteEnvironment: { name: 'rsc', childEnvironments: ['ssr'] },
+        // The macOS sandbox blocks Wrangler's default inspector-port probe.
+        inspectorPort: false,
         config: localBindingConfig,
       }),
     ],
