@@ -10,7 +10,7 @@ The prototype separates external evidence from marketing judgment, then requires
 
 > Current milestone: the evidence-to-brief workflow now runs as a local, human-in-the-loop website MVP. Multi-platform discovery, live model orchestration, and evaluation remain later stages.
 
-**Current version: v0.3.1.** The Radar Room website implements the approved PRD, and STEP 05 now documents the architecture, tradeoffs, interview narrative, and prioritized delivery plan. See the [STEP 05 learn-back](docs/V0.3.1_STEP5_LEARNBACK.md), [product roadmap](docs/PRODUCT_ROADMAP.md), [v0.3.0 website delivery](docs/V0.3.0_WEB_DEMO.md), and [project memory](memory.md).
+**Current version: v0.4.0 P0.** The local Radar Room now connects the brand center, generalized product assets, and explainable selection through one shared workspace shell. It supports both brand-led briefs that do not require a matching product and product-led briefs gated by a valid selection snapshot. The data remains synthetic and local. See the [brand-asset PRD](docs/V0.4.0_BRAND_ASSET_PRD.md), [unified workspace PRD](docs/V0.4.0_UNIFIED_WORKSPACE_PRD.md), [delivery record](docs/V0.4.0_UNIFIED_WORKSPACE_DELIVERY.md), [data contract](docs/V0.4.0_BRAND_ASSET_CONTRACT.md), and [project memory](memory.md).
 
 ## Why this project
 

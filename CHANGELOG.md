@@ -2,6 +2,29 @@
 
 All notable project versions are recorded here. GitHub is the canonical delivery surface for project artifacts.
 
+## [0.4.0] - 2026-09-19
+
+### Added
+
+- Generalized product contract `CatalogItem` covering physical goods, menu items, services, digital goods and offline experiences, with business lifecycle separated from marketing readiness.
+- `trendfit/brand_assets.py` deterministic validation for Brand, CatalogItem, Variant, Availability, Claim, EvidenceRef, OnboardingBatch and BrandAssetSnapshot, including immutable snapshots with content hashes.
+- Cross-category synthetic samples for Petlibro, Nayuki and BreezeCare; Python and browser-side contract tests.
+- Brand asset workspace at `/brand-assets`: product search and combined filters, readiness dashboard, master-detail asset view, Claim management, evidence lineage with page and row locators, and version snapshots.
+- Explainable selection at `/selection-tasks`: deterministic hard-rule filtering followed by transparent candidate ranking, explicit non-selection reasons, deterministic selection snapshot keys, and empty results instead of rule-bypassing recommendations.
+- Unified workspace shell: four top-level entries (热点雷达 / 品牌中心 / 决策中心 / 反馈入口), shared brand context across pages via URL parameters and local persistence, and cross-page links that prevent cross-brand mix-ups.
+- Dual brief paths: brand-led briefs that may proceed without a matching product but must bind brand and topic versions, and product-led briefs gated by a valid selection snapshot.
+
+### Changed
+
+- Frontend package version advanced from 0.3.0 to 0.4.0.
+- `web/vite.config.ts` sets `inspectorPort: false` so the local dev server can start under the macOS sandbox.
+- Product changes now require an approved product-framework PRD before implementation.
+
+### Notes
+
+- The website remains a local human-in-the-loop workspace on synthetic data. Brand file parsing, live source collection, online model assessment, accounts, cloud storage and public deployment are still outside this release.
+- Selection scores are rule-match degrees, not CTR, CVR, GMV or ROI predictions.
+
 ## [0.3.1] - 2026-09-06
 
 - Completed vibe-coding STEP 05 with a code-derived architecture explanation, tradeoffs, technical lessons, risks, redesign notes, five-minute interview script, and common interview questions.
