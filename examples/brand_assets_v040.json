@@ -1,0 +1,481 @@
+{
+  "run": {
+    "id": "RUN-CN-BRAND-ASSETS-001",
+    "version": "0.4.0",
+    "market": "CN",
+    "data_mode": "synthetic_demo",
+    "generated_at": "2026-09-11T09:00:00+08:00"
+  },
+  "brands": [
+    {
+      "id": "BR-PETLIBRO",
+      "version": 2,
+      "name": "Petlibro",
+      "category": "smart_pet_care",
+      "market": "CN"
+    },
+    {
+      "id": "BR-NAIXUE",
+      "version": 2,
+      "name": "奈雪的茶",
+      "category": "fresh_tea_and_bakery",
+      "market": "CN"
+    },
+    {
+      "id": "BR-BREEZECARE",
+      "version": 1,
+      "name": "BreezeCare（合成品牌）",
+      "category": "home_cleaning_service",
+      "market": "CN"
+    }
+  ],
+  "onboarding_batches": [
+    {
+      "id": "OB-PETLIBRO-001",
+      "brand_id": "BR-PETLIBRO",
+      "status": "reviewed",
+      "source_ids": ["SRC-PETLIBRO-SYNTHETIC-DECK"]
+    },
+    {
+      "id": "OB-NAIXUE-001",
+      "brand_id": "BR-NAIXUE",
+      "status": "reviewed",
+      "source_ids": ["SRC-NAIXUE-SYNTHETIC-DECK", "SRC-NAIXUE-SYNTHETIC-SHEET"]
+    },
+    {
+      "id": "OB-BREEZECARE-001",
+      "brand_id": "BR-BREEZECARE",
+      "status": "reviewed",
+      "source_ids": ["SRC-BREEZECARE-SYNTHETIC-SHEET"]
+    }
+  ],
+  "evidence_refs": [
+    {
+      "id": "EV-PETLIBRO-P3",
+      "source_id": "SRC-PETLIBRO-SYNTHETIC-DECK",
+      "source_kind": "synthetic",
+      "locator": {"page": 3},
+      "excerpt": "合成产品能力说明，不对应真实公开文档原句。",
+      "field_paths": ["catalog_items/CI-PETLIBRO-FEEDER/value_proposition"],
+      "reading_method": "synthetic_fixture",
+      "fact_status": "explicit"
+    },
+    {
+      "id": "EV-PETLIBRO-US-P4",
+      "source_id": "SRC-PETLIBRO-SYNTHETIC-DECK",
+      "source_kind": "synthetic",
+      "locator": {"page": 4},
+      "excerpt": "合成海外可用性说明，不代表中国市场在售。",
+      "field_paths": ["catalog_items/CI-PETLIBRO-FEEDER/availability"],
+      "reading_method": "synthetic_fixture",
+      "fact_status": "explicit"
+    },
+    {
+      "id": "EV-NAIXUE-P12",
+      "source_id": "SRC-NAIXUE-SYNTHETIC-DECK",
+      "source_kind": "synthetic",
+      "locator": {"slide": 12},
+      "excerpt": "合成策略概念，仅作为工作假设。",
+      "field_paths": ["catalog_items/CI-NAIXUE-WORKDAY-TEA/value_proposition"],
+      "reading_method": "synthetic_fixture",
+      "fact_status": "hypothesis"
+    },
+    {
+      "id": "EV-NAIXUE-R18",
+      "source_id": "SRC-NAIXUE-SYNTHETIC-SHEET",
+      "source_kind": "synthetic",
+      "locator": {"sheet": "products", "row": 18},
+      "excerpt": "合成商品表中的轻烘焙组合。",
+      "field_paths": ["catalog_items/CI-NAIXUE-BAKERY-SET"],
+      "reading_method": "synthetic_fixture",
+      "fact_status": "explicit"
+    },
+    {
+      "id": "EV-NAIXUE-R9",
+      "source_id": "SRC-NAIXUE-SYNTHETIC-SHEET",
+      "source_kind": "synthetic",
+      "locator": {"sheet": "products", "row": 9},
+      "excerpt": "合成商品表中的历史季节限定商品。",
+      "field_paths": ["catalog_items/CI-NAIXUE-SUMMER-TEA"],
+      "reading_method": "synthetic_fixture",
+      "fact_status": "explicit"
+    },
+    {
+      "id": "EV-BREEZECARE-R2",
+      "source_id": "SRC-BREEZECARE-SYNTHETIC-SHEET",
+      "source_kind": "synthetic",
+      "locator": {"sheet": "services", "row": 2},
+      "excerpt": "合成服务表中的空调挂机清洗服务范围。",
+      "field_paths": ["catalog_items/CI-BREEZECARE-AC-CLEAN"],
+      "reading_method": "synthetic_fixture",
+      "fact_status": "explicit"
+    },
+    {
+      "id": "EV-BREEZECARE-R5",
+      "source_id": "SRC-BREEZECARE-SYNTHETIC-SHEET",
+      "source_kind": "synthetic",
+      "locator": {"sheet": "services", "row": 5},
+      "excerpt": "合成服务表中的全屋清洗概念，履约范围待确认。",
+      "field_paths": ["catalog_items/CI-BREEZECARE-WHOLE-HOME"],
+      "reading_method": "synthetic_fixture",
+      "fact_status": "hypothesis"
+    }
+  ],
+  "claims": [
+    {
+      "id": "CL-PETLIBRO-CARE-CONTINUITY",
+      "version": 1,
+      "brand_id": "BR-PETLIBRO",
+      "statement": "帮助安排日常喂食，但不替代人工照护",
+      "policy": "conditional",
+      "conditions": ["不得表达疾病诊断、治疗或完全替代人工照护"],
+      "applies_to": ["CI-PETLIBRO-FEEDER"],
+      "market_scope": ["CN"],
+      "valid_from": null,
+      "valid_to": null,
+      "evidence_refs": ["EV-PETLIBRO-P3"],
+      "review_status": "confirmed"
+    },
+    {
+      "id": "CL-NAIXUE-SENSORY-REST",
+      "version": 1,
+      "brand_id": "BR-NAIXUE",
+      "statement": "提供短暂的味觉和空间休息体验",
+      "policy": "conditional",
+      "conditions": ["只能描述体验，不得承诺缓解焦虑或治疗效果"],
+      "applies_to": [
+        "CI-NAIXUE-WORKDAY-TEA",
+        "CI-NAIXUE-BAKERY-SET",
+        "CI-NAIXUE-SUMMER-TEA"
+      ],
+      "market_scope": ["CN"],
+      "valid_from": null,
+      "valid_to": null,
+      "evidence_refs": ["EV-NAIXUE-R18"],
+      "review_status": "confirmed"
+    },
+    {
+      "id": "CL-BREEZECARE-SERVICE-SCOPE",
+      "version": 1,
+      "brand_id": "BR-BREEZECARE",
+      "statement": "按已确认服务区域提供标准化家电清洗",
+      "policy": "conditional",
+      "conditions": ["不得承诺未确认城市、时段或设备类型的履约"],
+      "applies_to": ["CI-BREEZECARE-AC-CLEAN", "CI-BREEZECARE-WHOLE-HOME"],
+      "market_scope": ["CN"],
+      "valid_from": null,
+      "valid_to": null,
+      "evidence_refs": ["EV-BREEZECARE-R2"],
+      "review_status": "confirmed"
+    }
+  ],
+  "catalog_items": [
+    {
+      "id": "CI-PETLIBRO-FEEDER",
+      "version": 1,
+      "brand_id": "BR-PETLIBRO",
+      "type": "physical_product",
+      "family_id": "PF-PETLIBRO-FEEDER",
+      "name": "智能喂食器（合成商品）",
+      "canonical_category": "smart_pet_feeder",
+      "lifecycle": {"status": "active", "valid_from": null, "valid_to": null},
+      "marketing_readiness": "needs_review",
+      "value_proposition": {
+        "value": "帮助宠物家庭安排日常喂食，并保留人工检查与应急安排。",
+        "fact_status": "explicit",
+        "review_status": "confirmed",
+        "evidence_refs": ["EV-PETLIBRO-P3"]
+      },
+      "audience_tags": ["需要安排离家照护的宠物家庭"],
+      "scene_tags": ["日常喂食", "短期离家"],
+      "attributes": {"device_category": "feeder"},
+      "variants": [
+        {
+          "id": "SKU-PETLIBRO-FEEDER-DEMO",
+          "name": "演示变体",
+          "external_keys": [],
+          "attributes": {"capacity": "unknown"}
+        }
+      ],
+      "availability": [
+        {
+          "market": "US",
+          "region_scope": ["synthetic_demo"],
+          "channel": "ecommerce",
+          "status": "available",
+          "valid_from": null,
+          "valid_to": null,
+          "evidence_refs": ["EV-PETLIBRO-US-P4"]
+        },
+        {
+          "market": "CN",
+          "region_scope": [],
+          "channel": "unknown",
+          "status": "unknown",
+          "valid_from": null,
+          "valid_to": null,
+          "evidence_refs": []
+        }
+      ],
+      "claim_refs": ["CL-PETLIBRO-CARE-CONTINUITY"],
+      "constraints": ["不作疾病诊断或治疗承诺", "不默认海外 SKU 和售后在中国可用"],
+      "hard_blockers": [],
+      "creative_refs": [],
+      "source_refs": ["EV-PETLIBRO-P3", "EV-PETLIBRO-US-P4"],
+      "updated_at": "2026-09-11T09:00:00+08:00"
+    },
+    {
+      "id": "CI-NAIXUE-WORKDAY-TEA",
+      "version": 1,
+      "brand_id": "BR-NAIXUE",
+      "type": "menu_item",
+      "family_id": "PF-NAIXUE-TEA",
+      "name": "下班轻乳茶（合成演示）",
+      "canonical_category": "fresh_tea",
+      "lifecycle": {"status": "in_review", "valid_from": "2026-09-01", "valid_to": "2026-10-31"},
+      "marketing_readiness": "needs_review",
+      "value_proposition": {
+        "value": "用低负担的茶饮体验承接下班后的短暂休息。",
+        "fact_status": "hypothesis",
+        "review_status": "unreviewed",
+        "evidence_refs": ["EV-NAIXUE-P12"]
+      },
+      "audience_tags": ["城市年轻消费者"],
+      "scene_tags": ["下班", "短暂休息"],
+      "attributes": {"temperature_options": ["cold", "warm"]},
+      "variants": [
+        {
+          "id": "SKU-NAIXUE-WORKDAY-M",
+          "name": "中杯",
+          "external_keys": [],
+          "attributes": {"size": "M"}
+        }
+      ],
+      "availability": [
+        {
+          "market": "CN",
+          "region_scope": [],
+          "channel": "store",
+          "status": "unknown",
+          "valid_from": null,
+          "valid_to": null,
+          "evidence_refs": []
+        }
+      ],
+      "claim_refs": ["CL-NAIXUE-SENSORY-REST"],
+      "constraints": ["不得表达心理治疗或健康功效"],
+      "hard_blockers": [],
+      "creative_refs": [],
+      "source_refs": ["EV-NAIXUE-P12"],
+      "updated_at": "2026-09-11T09:00:00+08:00"
+    },
+    {
+      "id": "CI-NAIXUE-BAKERY-SET",
+      "version": 2,
+      "brand_id": "BR-NAIXUE",
+      "type": "menu_item",
+      "family_id": "PF-NAIXUE-BAKERY",
+      "name": "轻烘焙组合（合成演示）",
+      "canonical_category": "tea_and_bakery_bundle",
+      "lifecycle": {"status": "active", "valid_from": "2026-09-01", "valid_to": "2026-10-31"},
+      "marketing_readiness": "eligible",
+      "value_proposition": {
+        "value": "以小份烘焙与饮品组成可快速完成的休息组合。",
+        "fact_status": "explicit",
+        "review_status": "confirmed",
+        "evidence_refs": ["EV-NAIXUE-R18"]
+      },
+      "audience_tags": ["城市年轻消费者"],
+      "scene_tags": ["下班", "轻食"],
+      "attributes": {"bundle": true},
+      "variants": [
+        {
+          "id": "SKU-NAIXUE-BAKERY-SET-DEMO",
+          "name": "演示组合",
+          "external_keys": [],
+          "attributes": {"bundle": true}
+        }
+      ],
+      "availability": [
+        {
+          "market": "CN",
+          "region_scope": ["demo_store_group"],
+          "channel": "store",
+          "status": "available",
+          "valid_from": "2026-09-01",
+          "valid_to": "2026-10-31",
+          "evidence_refs": ["EV-NAIXUE-R18"]
+        }
+      ],
+      "claim_refs": ["CL-NAIXUE-SENSORY-REST"],
+      "constraints": ["只使用合成演示门店范围"],
+      "hard_blockers": [],
+      "creative_refs": [],
+      "source_refs": ["EV-NAIXUE-R18"],
+      "updated_at": "2026-09-11T09:00:00+08:00"
+    },
+    {
+      "id": "CI-NAIXUE-SUMMER-TEA",
+      "version": 1,
+      "brand_id": "BR-NAIXUE",
+      "type": "menu_item",
+      "family_id": "PF-NAIXUE-TEA",
+      "name": "夏日限定果茶（合成演示）",
+      "canonical_category": "seasonal_fruit_tea",
+      "lifecycle": {"status": "retired", "valid_from": "2026-06-01", "valid_to": "2026-08-31"},
+      "marketing_readiness": "expired",
+      "value_proposition": {
+        "value": "季节限定的清爽果茶体验。",
+        "fact_status": "explicit",
+        "review_status": "confirmed",
+        "evidence_refs": ["EV-NAIXUE-R9"]
+      },
+      "audience_tags": ["季节饮品消费者"],
+      "scene_tags": ["夏季"],
+      "attributes": {"seasonal": true},
+      "variants": [],
+      "availability": [
+        {
+          "market": "CN",
+          "region_scope": ["demo_store_group"],
+          "channel": "store",
+          "status": "unavailable",
+          "valid_from": "2026-06-01",
+          "valid_to": "2026-08-31",
+          "evidence_refs": ["EV-NAIXUE-R9"]
+        }
+      ],
+      "claim_refs": ["CL-NAIXUE-SENSORY-REST"],
+      "constraints": ["历史版本仅用于审计"],
+      "hard_blockers": [],
+      "creative_refs": [],
+      "source_refs": ["EV-NAIXUE-R9"],
+      "updated_at": "2026-09-11T09:00:00+08:00"
+    },
+    {
+      "id": "CI-BREEZECARE-AC-CLEAN",
+      "version": 1,
+      "brand_id": "BR-BREEZECARE",
+      "type": "service",
+      "family_id": "PF-BREEZECARE-APPLIANCE",
+      "name": "空调挂机清洗（合成服务）",
+      "canonical_category": "home_appliance_cleaning",
+      "lifecycle": {"status": "active", "valid_from": null, "valid_to": null},
+      "marketing_readiness": "eligible",
+      "value_proposition": {
+        "value": "在已确认服务区域提供标准化空调挂机清洗。",
+        "fact_status": "explicit",
+        "review_status": "confirmed",
+        "evidence_refs": ["EV-BREEZECARE-R2"]
+      },
+      "audience_tags": ["需要预约家电清洗的家庭"],
+      "scene_tags": ["换季清洁", "上门服务"],
+      "attributes": {
+        "service_area": ["北京市朝阳区（合成演示）"],
+        "fulfillment_status": "confirmed"
+      },
+      "variants": [
+        {
+          "id": "SKU-BREEZECARE-AC-WALL",
+          "name": "壁挂式空调服务包",
+          "external_keys": [],
+          "attributes": {"appliance_type": "wall_mounted_air_conditioner"}
+        }
+      ],
+      "availability": [
+        {
+          "market": "CN",
+          "region_scope": ["北京市朝阳区（合成演示）"],
+          "channel": "booking",
+          "status": "available",
+          "valid_from": null,
+          "valid_to": null,
+          "evidence_refs": ["EV-BREEZECARE-R2"]
+        }
+      ],
+      "claim_refs": ["CL-BREEZECARE-SERVICE-SCOPE"],
+      "constraints": ["只承诺已确认区域和设备类型"],
+      "hard_blockers": [],
+      "creative_refs": [],
+      "source_refs": ["EV-BREEZECARE-R2"],
+      "updated_at": "2026-09-11T09:00:00+08:00"
+    },
+    {
+      "id": "CI-BREEZECARE-WHOLE-HOME",
+      "version": 1,
+      "brand_id": "BR-BREEZECARE",
+      "type": "service",
+      "family_id": "PF-BREEZECARE-HOME",
+      "name": "全屋深度清洗（合成概念）",
+      "canonical_category": "whole_home_cleaning",
+      "lifecycle": {"status": "draft", "valid_from": null, "valid_to": null},
+      "marketing_readiness": "needs_review",
+      "value_proposition": {
+        "value": "提供一次性的全屋深度清洗方案。",
+        "fact_status": "hypothesis",
+        "review_status": "unreviewed",
+        "evidence_refs": ["EV-BREEZECARE-R5"]
+      },
+      "audience_tags": ["有集中清洁需求的家庭"],
+      "scene_tags": ["搬家", "换季清洁"],
+      "attributes": {"service_area": [], "fulfillment_status": "unknown"},
+      "variants": [],
+      "availability": [
+        {
+          "market": "CN",
+          "region_scope": [],
+          "channel": "booking",
+          "status": "unknown",
+          "valid_from": null,
+          "valid_to": null,
+          "evidence_refs": []
+        }
+      ],
+      "claim_refs": ["CL-BREEZECARE-SERVICE-SCOPE"],
+      "constraints": ["服务区域、设备范围与履约能力待确认"],
+      "hard_blockers": [],
+      "creative_refs": [],
+      "source_refs": ["EV-BREEZECARE-R5"],
+      "updated_at": "2026-09-11T09:00:00+08:00"
+    }
+  ],
+  "brand_asset_snapshots": [
+    {
+      "id": "BAS-PETLIBRO-0001",
+      "brand_id": "BR-PETLIBRO",
+      "created_at": "2026-09-11T09:00:00+08:00",
+      "brand_profile": {"id": "BR-PETLIBRO", "version": 2},
+      "catalog_items": [{"id": "CI-PETLIBRO-FEEDER", "version": 1}],
+      "claims": [{"id": "CL-PETLIBRO-CARE-CONTINUITY", "version": 1}],
+      "source_batch_ids": ["OB-PETLIBRO-001"],
+      "content_hash": "sha256:eb39878e4752418e73e2c81747e748cebd93c071038a5bd3d1dd4e9947950e31"
+    },
+    {
+      "id": "BAS-NAIXUE-0001",
+      "brand_id": "BR-NAIXUE",
+      "created_at": "2026-09-11T09:00:00+08:00",
+      "brand_profile": {"id": "BR-NAIXUE", "version": 2},
+      "catalog_items": [
+        {"id": "CI-NAIXUE-WORKDAY-TEA", "version": 1},
+        {"id": "CI-NAIXUE-BAKERY-SET", "version": 2},
+        {"id": "CI-NAIXUE-SUMMER-TEA", "version": 1}
+      ],
+      "claims": [{"id": "CL-NAIXUE-SENSORY-REST", "version": 1}],
+      "source_batch_ids": ["OB-NAIXUE-001"],
+      "content_hash": "sha256:e381ff2ab7f7872b8ef9e724201cd4cb575afc837bd3423b24c923685e6a7f34"
+    },
+    {
+      "id": "BAS-BREEZECARE-0001",
+      "brand_id": "BR-BREEZECARE",
+      "created_at": "2026-09-11T09:00:00+08:00",
+      "brand_profile": {"id": "BR-BREEZECARE", "version": 1},
+      "catalog_items": [
+        {"id": "CI-BREEZECARE-AC-CLEAN", "version": 1},
+        {"id": "CI-BREEZECARE-WHOLE-HOME", "version": 1}
+      ],
+      "claims": [{"id": "CL-BREEZECARE-SERVICE-SCOPE", "version": 1}],
+      "source_batch_ids": ["OB-BREEZECARE-001"],
+      "content_hash": "sha256:6bcb5962af0f35b0f598ce04309d6f018a5a3add49f7d4127f4d88d8fb178730"
+    }
+  ]
+}
