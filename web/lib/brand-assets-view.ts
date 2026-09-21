@@ -1,5 +1,5 @@
-export type Readiness = "eligible" | "needs_review" | "expired" | "blocked";
-export type ItemType = "physical_product" | "menu_item" | "service";
+export type Readiness = 'eligible' | 'needs_review' | 'expired' | 'blocked';
+export type ItemType = 'physical_product' | 'menu_item' | 'service';
 
 export interface BrandAssetBrand {
   id: string;
@@ -17,7 +17,7 @@ export interface EvidenceRef {
   excerpt: string;
   field_paths: string[];
   reading_method: string;
-  fact_status: "explicit" | "hypothesis";
+  fact_status: 'explicit' | 'hypothesis';
 }
 
 export interface Claim {
@@ -30,14 +30,14 @@ export interface Claim {
   applies_to: string[];
   market_scope: string[];
   evidence_refs: string[];
-  review_status: "confirmed" | "unreviewed" | string;
+  review_status: string;
 }
 
 export interface Availability {
   market: string;
   region_scope: string[];
   channel: string;
-  status: "available" | "unavailable" | "unknown" | string;
+  status: string;
   valid_from: string | null;
   valid_to: string | null;
   evidence_refs: string[];
@@ -59,8 +59,8 @@ export interface CatalogItem {
   marketing_readiness: Readiness;
   value_proposition: {
     value: string;
-    fact_status: "explicit" | "hypothesis";
-    review_status: "confirmed" | "unreviewed" | string;
+    fact_status: 'explicit' | 'hypothesis';
+    review_status: string;
     evidence_refs: string[];
   };
   audience_tags: string[];
@@ -109,40 +109,48 @@ export interface BrandAssetBundle {
 
 export interface AssetFilters {
   query: string;
-  type: ItemType | "all";
-  readiness: Readiness | "all";
+  type: ItemType | 'all';
+  readiness: Readiness | 'all';
 }
 
 export const TYPE_LABELS: Record<ItemType, string> = {
-  physical_product: "实体商品",
-  menu_item: "菜单商品",
-  service: "服务商品",
+  physical_product: '实体商品',
+  menu_item: '菜单商品',
+  service: '服务商品',
 };
 
 export const READINESS_LABELS: Record<Readiness, string> = {
-  eligible: "可进入营销",
-  needs_review: "待补充核验",
-  expired: "已失效",
-  blocked: "已阻断",
+  eligible: '可进入营销',
+  needs_review: '待补充核验',
+  expired: '已失效',
+  blocked: '已阻断',
 };
 
 export const FACT_LABELS = {
-  explicit: "事实",
-  hypothesis: "假设",
+  explicit: '事实',
+  hypothesis: '假设',
 } as const;
 
 export function getBrandItems(bundle: BrandAssetBundle, brandId: string) {
   return bundle.catalog_items.filter((item) => item.brand_id === brandId);
 }
 
-export function summarizeBrandAssets(bundle: BrandAssetBundle, brandId: string) {
+export function summarizeBrandAssets(
+  bundle: BrandAssetBundle,
+  brandId: string,
+) {
   const items = getBrandItems(bundle, brandId);
   return {
     total: items.length,
-    eligible: items.filter((item) => item.marketing_readiness === "eligible").length,
-    needsReview: items.filter((item) => item.marketing_readiness === "needs_review").length,
+    eligible: items.filter((item) => item.marketing_readiness === 'eligible')
+      .length,
+    needsReview: items.filter(
+      (item) => item.marketing_readiness === 'needs_review',
+    ).length,
     unavailable: items.filter(
-      (item) => item.marketing_readiness === "expired" || item.marketing_readiness === "blocked",
+      (item) =>
+        item.marketing_readiness === 'expired' ||
+        item.marketing_readiness === 'blocked',
     ).length,
   };
 }
@@ -152,7 +160,7 @@ export function filterBrandItems(
   brandId: string,
   filters: AssetFilters,
 ) {
-  const query = filters.query.trim().toLocaleLowerCase("zh-CN");
+  const query = filters.query.trim().toLocaleLowerCase('zh-CN');
   return getBrandItems(bundle, brandId).filter((item) => {
     const matchesQuery =
       !query ||
@@ -163,12 +171,13 @@ export function filterBrandItems(
         ...item.audience_tags,
         ...item.scene_tags,
       ]
-        .join(" ")
-        .toLocaleLowerCase("zh-CN")
+        .join(' ')
+        .toLocaleLowerCase('zh-CN')
         .includes(query);
-    const matchesType = filters.type === "all" || item.type === filters.type;
+    const matchesType = filters.type === 'all' || item.type === filters.type;
     const matchesReadiness =
-      filters.readiness === "all" || item.marketing_readiness === filters.readiness;
+      filters.readiness === 'all' ||
+      item.marketing_readiness === filters.readiness;
     return matchesQuery && matchesType && matchesReadiness;
   });
 }
@@ -179,15 +188,19 @@ export function resolveClaims(bundle: BrandAssetBundle, item: CatalogItem) {
     .filter((claim): claim is Claim => Boolean(claim));
 }
 
-export function resolveEvidence(bundle: BrandAssetBundle, evidenceIds: string[]) {
+export function resolveEvidence(
+  bundle: BrandAssetBundle,
+  evidenceIds: string[],
+) {
   return evidenceIds
-    .map((evidenceId) => bundle.evidence_refs.find((evidence) => evidence.id === evidenceId))
+    .map((evidenceId) =>
+      bundle.evidence_refs.find((evidence) => evidence.id === evidenceId),
+    )
     .filter((evidence): evidence is EvidenceRef => Boolean(evidence));
 }
 
-export function formatLocator(locator: EvidenceRef["locator"]) {
+export function formatLocator(locator: EvidenceRef['locator']) {
   return Object.entries(locator)
     .map(([key, value]) => `${key} ${value}`)
-    .join(" · ");
+    .join(' · ');
 }
-

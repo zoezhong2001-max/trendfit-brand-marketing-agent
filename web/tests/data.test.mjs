@@ -52,15 +52,24 @@ test('reject fake realtime, fake URLs and duplicate briefs', () => {
 });
 test('load validates exact bytes before business rendering', async () => {
   const original = globalThis.fetch;
+  const requestName = (path) => {
+    const value =
+      path instanceof URL
+        ? path.href
+        : typeof path === 'string'
+          ? path
+          : path.url;
+    return value.split('/').pop();
+  };
   globalThis.fetch = async (path) =>
-    new Response(fs.readFileSync(new URL(String(path).split('/').pop(), dir)));
+    new Response(fs.readFileSync(new URL(requestName(path), dir)));
   try {
     assert.equal((await loadBundle()).brands.length, 2);
     globalThis.fetch = async (path) =>
       new Response(
-        String(path).endsWith('brands.json')
+        requestName(path) === 'brands.json'
           ? '{}'
-          : fs.readFileSync(new URL(String(path).split('/').pop(), dir)),
+          : fs.readFileSync(new URL(requestName(path), dir)),
       );
     await assert.rejects(loadBundle, /哈希/);
   } finally {
