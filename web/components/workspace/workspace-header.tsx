@@ -41,7 +41,7 @@ export function WorkspaceHeader({
         <span className="demo-tag">合成演示 · 热度未核验</span>
       </header>
       <div className="brandbar">
-        <span>品牌视角</span>
+        <span>切换品牌</span>
         {brands.map((item) => (
           <Button
             key={item.id}

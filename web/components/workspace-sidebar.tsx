@@ -31,7 +31,16 @@ export default function WorkspaceSidebar({
   return (
     <aside className={styles.sidebar}>
       <a className={styles.logo} href={hrefs.radar} aria-label="TrendFit 热点雷达">
-        <span className={styles.logoMark}>TF</span>
+        <span className={styles.logoMark} aria-hidden="true">
+          <svg viewBox="0 0 40 40" focusable="false">
+            <path className={styles.logoSweep} d="M20 20 24.9 7.9A13 13 0 0 1 33 20Z" />
+            <circle cx="20" cy="20" r="13" />
+            <circle cx="20" cy="20" r="8" />
+            <circle cx="20" cy="20" r="3" />
+            <path d="M20 5v30M5 20h30" />
+            <circle className={styles.logoSignal} cx="27" cy="14" r="1.8" />
+          </svg>
+        </span>
         <span><strong>TrendFit</strong><small>MARKETING OS</small></span>
       </a>
       <p className={styles.contextLabel}>统一营销工作台</p>

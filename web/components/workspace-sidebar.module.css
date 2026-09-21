@@ -29,8 +29,27 @@
   border-radius: 0.75rem;
   color: #08100c;
   background: #d8fc70;
-  font-weight: 800;
-  letter-spacing: -0.04em;
+}
+
+.logoMark svg {
+  width: 2rem;
+  height: 2rem;
+  overflow: visible;
+  fill: none;
+  stroke: #244015;
+  stroke-width: 1.15;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.logoMark .logoSweep {
+  fill: rgba(36, 64, 21, 0.14);
+  stroke: none;
+}
+
+.logoMark .logoSignal {
+  fill: #244015;
+  stroke: none;
 }
 
 .logo strong,
@@ -95,6 +114,7 @@
   }
   .logo { padding: 0 0 0.7rem; }
   .logoMark { width: 2.1rem; height: 2.1rem; border-radius: 0.6rem; }
+  .logoMark svg { width: 1.7rem; height: 1.7rem; }
   .contextLabel,
   .boundary,
   .version,
