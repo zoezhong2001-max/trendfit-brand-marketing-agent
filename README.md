@@ -63,6 +63,10 @@ The code enforces boundaries that are easy to lose in an LLM workflow:
 
 ## Run the public demo
 
+**Live demo:** [https://trendfit-demo.zoezhong2001.chatgpt.site/?brand=BR-NAIXUE](https://trendfit-demo.zoezhong2001.chatgpt.site/?brand=BR-NAIXUE)
+
+The hosted demo is publicly accessible. Its scenarios and data are synthetic, and browser edits and feedback remain on each visitor's device.
+
 Python 3.10+ is enough; runtime code uses only the standard library.
 
 ```bash
